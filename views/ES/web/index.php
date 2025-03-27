@@ -1,14 +1,18 @@
+
+oe longoria
 <?php
 $modelA = new BannerModel();
 $modelB = new NoticiasesModel();
 $modelC = new ModalModel();
-
 $arrBanner = $modelA->obtenerBanner();
 $arrBanner['cuerpo'] = (array) json_decode($arrBanner['cuerpo'], true);
 $arrNoticias = $modelB->listarNoticiasWeb(0, 5, '%');
 $arrModal = $modelC->obtenerModal();
 //var_dump($arrModal);
 //exit;
+
+echo('hola mundo');
+
 
 ?>
 <!DOCTYPE html>
