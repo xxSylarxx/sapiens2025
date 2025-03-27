@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+
+/* colores web */
+:root {
+  --color1: #012e6d;
+  --color2: #bbccec;
+  --color3: #01a6b7;
+  --color4: #0c5adb;
+  --color5: #293742cc;
+  --color6: #ffff;
+  --color7: #232323;
+  --color8: #111a3a;
+  --color9: #a6c6ee;
+  --color10: #410099;
+}
+
+/* colores para los iconos de degradado, se utilizaron los siguientes colores:
+#6DC7FF33
+#BBCCEC
+#01A6B7
+#0C5ADB 
+*/
+@font-face {
+  font-family: "muli";
+  src: url("../fonts/Muli-Regular.ttf");
+}
+
+body {
+  color: #616161;
+  overflow-x: hidden;
+  font-family: "muli";
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p.line {
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "muli";
+}
+
+/* estilos header , para las sombras*/
+/* header {
+  -moz-box-shadow: 0 3px 3px rgba(94, 94, 94, 0.75);
+  -webkit-box-shadow: 0 3px 3px rgba(94, 94, 94, 0.75);
+  box-shadow: 0 3px 3px rgba(94, 94, 94, 0.75);
+ 
+} */
+
+header .bar-sup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 7.5%;
+  background: var(--color2);
+}
+
+header .bar-sup :hover {
+  color: var(--color3);
+}
+header .bar-sup a {
+  color: var(--color3);
+  font-size: 0.85em;
+}
+
+header nav.navbar {
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: transparent;
+}
+
+header a.nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.79em;
+  text-transform: uppercase;
+}
+
+header a.nav-link i {
+  font-size: 1rem;
+}
+
+header a {
+  font-family: "muli", sans-serif;
+}
+
+header .dropdown-item {
+  font-size: 0.8em;
+  padding: 8px 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+  color: var(--color3);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--color3);
+}
+
+button > span {
+  color: black;
+}
+/* animacion del mundo */
+#img-mundo {
+  
+  animation-name: rotation;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+#img-mundo2 {
+  
+  -webkit-animation: alltuchtopdown 1.5s ease-in-out 0s infinite alternate;
+  animation: alltuchtopdown 1.5s ease-in-out 0s infinite alternate;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+
+}
+
+@keyframes alltuchtopdown {
+  0% {
+    -webkit-transform: rotateX(0deg) translateY(0px);
+    -ms-transform: rotateX(0deg) translateY(0px);
+    transform: rotateX(0deg) translateY(0px);
+  }
+  50% {
+    -webkit-transform: rotateX(0deg) translateY(-20px);
+    -ms-transform: rotateX(0deg) translateY(-20px);
+    transform: rotateX(0deg) translateY(-20px);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) translateY(0px);
+    -ms-transform: rotateX(0deg) translateY(0px);
+    transform: rotateX(0deg) translateY(0px);
+  }
+}
+
+#text-logo {
+  color: var(--color6);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "muli";
+  padding-left: 1rem;
+}
+
+#text-logo span {
+  font-size: 2.1rem;
+  font-weight: bold;
+  font-family: "muli";
+  margin-left: -1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--color6);
+}
+
+.text-justify {
+  text-align: justify;
+}
+.back {
+  font-size: 15px;
+}
+
+#lema {
+  position: relative;
+  margin-top: -90px;
+}
+
+#lema .div-lema {
+  border-radius: 20px;
+  background-color: var(--color1);
+}
+#lema .div-lema h2 {
+  color: var(--color7);
+}
+
+/* estilos footer */
+
+footer {
+  /* -moz-box-shadow: 3px 0px 10px rgba(94, 94, 94, 0.75);
+  -webkit-box-shadow: 3px 0px 10px rgba(94, 94, 94, 0.75);
+  box-shadow: 3px 0px 10px rgba(94, 94, 94, 0.75);*/
+
+  background: var(--color1);
+  background-size: 20%;
+}
+
+footer #terminos {
+  font-size: 1rem;
+}
+#perfiles {
+  padding-top: 5.5rem;
+}
+.imgnivel {
+  height: 350px;
+}
+.ubic li {
+  align-items: center;
+  border: none;
+  background: transparent;
+  justify-content: center;
+}
+footer .bar-inf2 {
+  display: none;
+}
+#escudo img {
+  filter: drop-shadow(0 0 5px rgb(246, 252, 251));
+}
+
+/* mod responsive */
+@media screen and (max-width: 600px) {
+  .modal-body img{
+    width:90px;
+    height:90px;
+  }
+  #img-mundo {
+    width:250px;
+  }#img-mundo2 {
+    width:290px;
+  }
+  #img-mundo3 {
+    width:290px;
+  }
+  #escudo img {
+    height: 50px;
+  }
+  #text-logo span {
+    margin-right: -1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 0.2rem;
+  }
+
+  header #logotipo {
+    margin-left: 30em;
+    font-size: 0.2em;
+  }
+  header nav.navbar {
+    padding: 2.7% 3%;
+  }
+  footer .bar-inf {
+    padding: 6px 3%;
+  }
+  .separador > .sep_title {
+    font-size: 16px;
+  }
+  .separador > .sep_title2 {
+    font-size: 12px;
+  }
+  #col-niveles {
+    margin-bottom: 2rem;
+  }
+  .imgnivel {
+    height: 180px;
+  }
+
+  header .bar-sup span {
+    display: none;
+  }
+  footer .bar-inf span {
+    display: none;
+  }
+  footer .bar-inf2 {
+    display: inline-block;
+  }
+  footer .bar-inf2 span {
+    display: none;
+  }
+  footer .div-escudo {
+    padding-bottom: 1.5rem;
+  }
+  footer .contacto .form-check {
+    padding-left: 0.8rem;
+    padding-top: 1rem;
+  }
+  header #submenu span {
+    display: none;
+  }
+
+  .ubic-img div {
+    padding-bottom: 1.2rem;
+  }
+  .ubic li {
+    justify-content: left;
+  }
+  #div-logros {
+    margin-top: 0rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 1.3rem;
+  }
+  .back {
+    font-size: 10px !important;
+  }
+  #perfiles {
+    padding-top: 2rem;
+  }
+  .sig-facebook {
+    display: none;
+  }
+  .ultimoitem {
+    padding-bottom: 0rem;
+  }
+  .fixed-top {
+    position: absolute;
+  }
+  header nav.navbar {
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: var(--color6);
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: var(--color1);
+  }
+}
