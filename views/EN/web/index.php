@@ -47,7 +47,11 @@ $arrModal = $modelC->obtenerModal();
     <!-- estilos de fondo con particulas -->
     <link rel="stylesheet" media="screen" href="<?php echo WEBURL ?>/assets/css/estiloparticulas.css">
 
-
+<!-- owl -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <title>SAPIENS CONSULTING</title>
 </head>
@@ -56,7 +60,7 @@ $arrModal = $modelC->obtenerModal();
 
 <body>
 
-    <style>
+<style>
         .abajo {
             background-color: var(--color6);
             -moz-box-shadow: 0 3px 3px rgba(94, 94, 94, 0.75);
@@ -175,8 +179,8 @@ $arrModal = $modelC->obtenerModal();
         }
 
         #servicios {
-            padding-top: 6rem;
-            margin-top: -80px;
+            padding-top: .2rem;
+            /*  margin-top: -80px; */
         }
 
         #p-servicios {
@@ -278,7 +282,17 @@ $arrModal = $modelC->obtenerModal();
 
         .div-banner {
             position: absolute;
-            left: 10px;
+            left: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100%;
+            padding-bottom: 5%;
+        }
+
+        .div-banner2 {
+            position: absolute;
+            left: 6%;
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -481,11 +495,41 @@ $arrModal = $modelC->obtenerModal();
 
 
         #careers {
-            /* background-image: url("./assets/img/inicio/fondo1.png"); */
+            background-image: url("./assets/img/inicio/fondoimagen.jpg");
+            background-position: center center;
             padding-top: 3rem;
             padding-bottom: 3rem;
             background-color: var(--color1);
-            background-size: 100%;
+            background-size: 133%;
+            background-repeat: no-repeat;
+        }
+
+        #careers h2 {
+            color: var(--color1);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #careers h3 {
+            color: var(--color1);
+            font-weight: bold;
+            text-align: start;
+        }
+
+        #careers h4 {
+            color: var(--color1);
+
+            text-align: center;
+        }
+
+        #careers p {
+            text-align: justify;
+            color: var(--color1);
+        }
+
+        #careers ul>li {
+            text-align: start !important;
+            color: var(--color1);
         }
 
         #img-contact {
@@ -513,14 +557,20 @@ $arrModal = $modelC->obtenerModal();
             scroll-margin-top: 50px;
         }
 
-        #section-ourservices {
+        /* #section-ourservices {
             scroll-margin-top: 150px;
+        } */
+        #section-ourservices {
+            position: absolute !important;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         #div-industrias {
             background-color: white;
             /* margin-top: -5px; */
-            padding-top: 5rem;
+            padding-top: 1rem;
             scroll-margin-top: 50px;
             position: relative;
         }
@@ -640,9 +690,10 @@ $arrModal = $modelC->obtenerModal();
             padding-top: 2rem;
         }
 
-        #section-ourservices {
+
+        /*  #section-ourservices {
             margin-top: -50rem;
-        }
+        } */
 
         #partners {
             padding-top: 4rem;
@@ -742,7 +793,7 @@ $arrModal = $modelC->obtenerModal();
             }
 
             .tittle-banner1 {
-                font-size: .6rem;
+                font-size: .8rem;
                 padding: 1rem;
                 color: white;
                 /* z-index: -3; */
@@ -802,7 +853,7 @@ $arrModal = $modelC->obtenerModal();
             }
 
             .tittle-banner1 {
-                font-size: .8rem;
+                font-size: 1rem;
                 padding: 1rem;
                 color: white;
                 /* z-index: -3; */
@@ -959,8 +1010,16 @@ $arrModal = $modelC->obtenerModal();
             }
 
             .div-banner {
-                left: 2rem;
+                left: -50px;
+
                 padding-bottom: 6%;
+            }
+
+            .tittle-banner1 {
+                font-size: 1.5rem;
+                padding: 1.5rem;
+                color: white;
+                font-weight: bold;
             }
 
         }
@@ -1008,7 +1067,7 @@ $arrModal = $modelC->obtenerModal();
             }
 
             #servicios {
-                padding-top: 7rem;
+                padding-top: .2rem;
             }
         }
     </style>
@@ -1241,95 +1300,129 @@ $arrModal = $modelC->obtenerModal();
     </section>
 
     <!-- Seccion de otros servicios -->
-    <div id="particles-js"></div>
+    <div style="position:relative;">
+
+
+    <div id="particles-js">
+    </div>
     <section id="section-ourservices" class="container-fluid py-5">
 
         <div>
             <div class="container " style="text-align:center;">
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
-                        <h2 id="titulo-services">Our Services</h2>
+                        <h2 id="titulo-services">Servicios</h2>
                         <div class="bar-main" style="width:100%;">
                             <div class="bar bar-big"></div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="container__cards">
-
-                <div class="card_style1">
-                    <div class="cover">
-                        <img src="./assets/img/inicio/p1.png" alt="" />
-                        <div class="img__back"></div>
-                    </div>
-                    <div class="description">
-                        <h2 style="color:black;">IT Staff Augmentation</h2>
-                        <p>
-                            Individual developers and dedicated development teams on demand
-                            to expand and support your in-house team or cover specific technical
-                            needs and domain expertise.
-                        </p>
-                        <br>
-                        <br>
-                        <!-- <a class="" href="" data-bs-toggle="modal" data-bs-target="#modal1"><input type="button" value="More" /></a> -->
+            <div class="container__cards owl-carousel owl-theme" id="servicios">
+                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                    <div class="card_style1 h-100">
+                        <div class="cover">
+                            <img src="./assets/img/inicio/p1.png" alt="" />
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description h-100">
+                            <h4 style="color:black;">Outsourcing de Personal de TI</h4>
+                            <p>
+                                Desarrolladores individuales y equipos de desarrollo dedicados a pedido para expandir
+                                y respaldar su equipo interno o cubrir necesidades técnicas específicas y experiencia.
+                            </p>
+                            <br>
+                            <br>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card_style1">
-                    <div class="cover">
-                        <img src="./assets/img/inicio/p4.png" alt="" />
-                        <div class="img__back"></div>
-                    </div>
-                    <div class="description">
-                        <h2 style="color:black;">Application Development</h2>
-                        <p>
-                            Software tailored to meet your unique demands. Along with full-cycle custom
-                            software development, we provide software maintenance and platform-based customization.
-                        </p>
-                        <br>
-                        <br>
-                        <!-- <a class="" href="" data-bs-toggle="modal" data-bs-target="#modal2"><input type="button" value="More" /></a> -->
+                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                    <div class="card_style1 h-100">
+                        <div class="cover">
+                            <img src="./assets/img/inicio/p4.png" alt="" />
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h4 style="color:black;">Desarrollo de Aplicaciones</h4>
+                            <p>
+                                Software diseñado para satisfacer sus demandas únicas. Junto con el desarrollo de software personalizado
+                                de ciclo completo, proporcionamos mantenimiento de software y personalización basada en cada plataforma.
+                            </p>
+                            <br>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="card_style1 ">
-                    <div class="cover">
-                        <img src="./assets/img/inicio/p3.png" alt="" />
-                        <div class="img__back"></div>
-                    </div>
-                    <div class="description">
-                        <h2 style="color:black;">Mobile Apps Development</h2>
-                        <p>Whether you need native apps on iOS, Android, Windows platforms,
-                            or a cross-platform solution, we can help you with the appropriate solution.
-                            We offer project implementation, integration, and maintenance of mobile applications.
+                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                    <div class="card_style1 h-100">
+                        <div class="cover">
+                            <img src="./assets/img/inicio/p3.png" alt="" />
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h4 style="color:black;">Desarrollo de Aplicaciones Móviles</h4>
+                            <p>Ya sea que necesite aplicaciones nativas en iOS, Android, plataformas Windows
+                                o una solución multiplataforma, podemos ayudarlo con la solución adecuada. Ofrecemos
+                                implementación de proyectos, integración y mantenimiento de aplicaciones móviles.
+                            </p>
 
-                        </p>
-                        <!-- <a class="" href="" data-bs-toggle="modal" data-bs-target="#modal3"><input type="button" value="More" /></a> -->
+                        </div>
                     </div>
                 </div>
 
-                <div class="card_style1">
-                    <div class="cover">
-                        <img src="./assets/img/inicio/p2.png" alt="" />
-                        <div class="img__back"></div>
+
+                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                    <div class="card_style1 h-100">
+                        <div class="cover">
+                            <img src="./assets/img/inicio/p2.png" alt="" />
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h4 style="color:black;">Administración y Soporte de Aplicaciones</h4>
+                            <p>Ayudamos a los clientes a administrar y brindar soporte a sus aplicaciones
+                                e infraestructura tecnológica para aprovechar al máximo su inversión.
+                            </p>
+                            <br>
+                            <br>
+
+                        </div>
                     </div>
-                    <div class="description">
-                        <h2 style="color:black;">Management and Support</h2>
-                        <p>We help clients managing and providing support to their
-                            applications and technology infrastructure to get the most
-                            out of their investment.
-                        </p>
-                        <br>
-                        <br>
-                        <br>
-                        <!-- <a class="" href="" data-bs-toggle="modal" data-bs-target="#modal4"><input type="button" value="More" /></a> -->
+                </div>
+                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                    <div class="card_style1 h-100">
+                        <div class="cover">
+                            <img src="./assets/img/inicio/p5.png" alt="" />
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h4 style="color:black;">Ciberseguridad</h4>
+                            <p class="pb-2">Soluciones integrales de ciberseguridad para proteger su negocio en el cambiante panorama digital. Nuestros servicios incluyen detección de amenazas, gestión de riesgos, encriptación de datos y cumplimiento normativo para garantizar la seguridad de sus sistemas e información.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                    <div class="card_style1 h-100">
+                        <div class="cover">
+                            <img src="./assets/img/inicio/p6.png" alt="" />
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h4 style="color:black;">Inteligencia Artificial (IA)</h4>
+                            <p class="pb-2" style="font-size:.88rem;">Soluciones de IA que transformarán su negocio. Podemos ayudarle a aprovechar el poder de la IA para impulsar la eficiencia, la innovación y el crecimiento de su negocio usando modelos que incluyen análisis predictivo, modelos de aprendizaje automático, automatización y procesamiento del lenguaje natural.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+</div>
+
 
 
     <!-- modales para la seccion de otros servicios -->
@@ -2129,7 +2222,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                    jira
+                                                    Jira
 
                                                 </p>
 
@@ -2369,6 +2462,31 @@ $arrModal = $modelC->obtenerModal();
                                                 <p>
 
                                                     MongoDB
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Redis
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    MariaDB
                                                 </p>
 
                                             </span>
@@ -2731,7 +2849,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog7.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item7" aria-expanded="false" aria-controls="item7">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-microsoft"></i>&nbsp;Microsoft</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-microsoft"></i>&nbsp;Microsoft DevOps & Architecture</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -2891,9 +3009,7 @@ $arrModal = $modelC->obtenerModal();
                                             <span>
 
                                                 <p>
-
                                                     Git
-
                                                 </p>
 
                                             </span>
@@ -3014,7 +3130,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog9.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item9" aria-expanded="false" aria-controls="item9">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-node-js"></i>&nbsp;Libraries Frameworks</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-node-js"></i>&nbsp;Libraries & Frameworks</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -3613,46 +3729,62 @@ $arrModal = $modelC->obtenerModal();
     <section id="careers">
         <br>
         <br>
-        <div class="container " style="text-align:center;">
+        <div class="container-fluid" style="text-align:center;padding-right:5rem;padding-left:5rem;">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-
-                    <h2 style="color:white;font-weight:bold;">Work with us</h2>
+                    <h2>Work with us</h2>
                     <div class="bar-main" style="width:100%;">
                         <div class="bar bar-big"></div>
-                        <!-- <div class="py-5 justify-content-center">
-                            <img src="./assets/img/inicio/wk_us.png" width="100%" alt="">
-                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-lg-4">
+                    <h3>Join Sapiens Consulting</h3>
+                    <p>We are seeking technically proficient individuals with a proactive disposition and a passion for innovation. Our team comprises highly skilled professionals, chosen through a stringent assessment of technical skills, aptitude, and communication capabilities.</p>
+                    <p>Roles:</p>
+                    <ul>
+                        <li>Developers</li>
+                       <!--  <li>Analistas de Sistemas </li> -->
+                        <li>Database Administrators </li>
+                        <li>System Analysts</li>
+                        <li>Project Managers</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./assets/img/icons/peru.png" width="100%" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <h4>Are you passionate about technology and tackling challenges? </h4>
+                    <h4 class="py-4">Join our innovative, collaborative, and dynamic team!</h4>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg">
+                            <span style="font-size: 3rem;color:var(--color1);">Be part</span>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-lg-4">
+                            <span style="font-size: 1rem;color:var(--color1);">of the team</span>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-3">
+                            <span style="font-size: 2rem;color:var(--color1);">Apply</span>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-around pt-2">
+                        <div class="col-lg-4">
+                            <img src="./assets/img/icons/ico1.png" width="100%" alt="">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./assets/img/icons/ico2.png" width="100%" alt="">
+                        </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
-        <!-- <section id="lema1" class="py-5">
-            <img src="./assets/img/inicio/wk_us.png" width="100%" alt="">
-        </section> -->
-        <!-- <div class="container"> -->
-        <div class="row">
-            <div class="col-12 col-lg-12">
-                <div style="text-align:center;color:white;font-size:18px;"><span>Sapiens Corporation is continuously in search of
-                            resources with technical skills, excellent attitude and self-motivated. Our recruitment process is a demanding
-                            and include tests of attitude, technical evaluation, communication skills and validation of professional references.
-                            Our team consists only of professionals with university studies. We seek dynamic, results-oriented individuals,
-                            interested to work in a thoughtful, collaborative, innovative and friendly environment. We seek resources mainly
-                            in the following areas: Developers, Systems analysts, Database administrator, Experts in BPM, Project Managers.</span></div>
-                <br>
-                <!-- <div style="text-align:center;color:white;font-weight:bold;font-size:20px;"><span>Interested in joining us? </span></div>
-                    <br>
-                    <div style="text-align:center;color:white;">Contact our Recruitment Team at &nbsp;<a href="mailto:recruitment@awaridigital.com" style="color:var(--color8);font-weight:bold;" target="_blank">recruitment@awaridigital.com</a>&nbsp;with any questions
-                    </div> -->
-
 
             </div>
         </div>
-        <!-- </div> -->
-        <!-- <br> -->
-        <!-- <br> -->
-
     </section>
     <section id="div-contact">
         <!-- <div class="container-fluid" id="img-contact">
@@ -3872,6 +4004,30 @@ $arrModal = $modelC->obtenerModal();
             e.target.reset();
         });
     }
+</script>
+<script>
+    $(document).ready(function() {
+        $(".container__cards").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            },
+            navText: ["&#10094;", "&#10095;"] // Flechas personalizadas (← y →)
+        });
+    });
 </script>
 <!-- Para iniciar animaciones de div -->
 <script>

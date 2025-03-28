@@ -179,7 +179,7 @@ $arrModal = $modelC->obtenerModal();
         }
 
         #servicios {
-            padding-top: 4rem;
+            padding-top: .2rem;
             /*  margin-top: -80px; */
         }
 
@@ -1067,7 +1067,7 @@ $arrModal = $modelC->obtenerModal();
             }
 
             #servicios {
-                padding-top: 3rem;
+                padding-top: .2rem;
             }
         }
     </style>
@@ -1650,8 +1650,10 @@ $arrModal = $modelC->obtenerModal();
     </section>
     <br>
     <br>
+
     <!-- seccion de Programming & Technology Expertise -->
     <section id="programing">
+
         <div class="container " style="text-align:center;">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
@@ -1661,6 +1663,7 @@ $arrModal = $modelC->obtenerModal();
                         <div class="bar bar-big"></div>
                     </div>
                 </div>
+
             </div>
         </div>
         <br>
@@ -2234,7 +2237,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                    jira
+                                                    Jira
 
                                                 </p>
 
@@ -2474,6 +2477,31 @@ $arrModal = $modelC->obtenerModal();
                                                 <p>
 
                                                     MongoDB
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Redis
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    MariaDB
                                                 </p>
 
                                             </span>
@@ -2836,7 +2864,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog7.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item7" aria-expanded="false" aria-controls="item7">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-microsoft"></i>&nbsp;Microsoft</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-microsoft"></i>&nbsp;Microsoft DevOps & Architecture</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -2908,6 +2936,109 @@ $arrModal = $modelC->obtenerModal();
                                                 <p>
 
                                                     WCF
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Clean Architecture
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Azure DevOps
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Microsoft Fabric
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Containers
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Docker
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+                                                    Git
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Kubernetes
 
                                                 </p>
 
@@ -3014,7 +3145,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog9.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item9" aria-expanded="false" aria-controls="item9">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-node-js"></i>&nbsp;Libraries Frameworks</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-node-js"></i>&nbsp;Libraries & Frameworks</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -3552,7 +3683,11 @@ $arrModal = $modelC->obtenerModal();
                 </div>
             </div>
         </div>
+
+        </div>
+
     </section>
+
 
 
     <br><!--  -->
