@@ -45,6 +45,11 @@ $arrModal = $modelC->obtenerModal();
     <link rel="stylesheet" href="<?php echo WEBURL ?>/assets/css/estilocard.css" />
     <!-- estilos de fondo con particulas -->
     <link rel="stylesheet" media="screen" href="./assets/css/estiloparticulas.css">
+    <!-- owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
 
@@ -174,8 +179,8 @@ $arrModal = $modelC->obtenerModal();
         }
 
         #servicios {
-            padding-top: 6rem;
-            margin-top: -80px;
+            padding-top: 4rem;
+            /*  margin-top: -80px; */
         }
 
         #p-servicios {
@@ -490,11 +495,41 @@ $arrModal = $modelC->obtenerModal();
 
 
         #careers {
-            /* background-image: url("./assets/img/inicio/fondo1.png"); */
+            background-image: url("./assets/img/inicio/fondoimagen.jpg");
+            background-position: center center;
             padding-top: 3rem;
             padding-bottom: 3rem;
             background-color: var(--color1);
-            background-size: 100%;
+            background-size: 133%;
+            background-repeat: no-repeat;
+        }
+
+        #careers h2 {
+            color: var(--color1);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #careers h3 {
+            color: var(--color1);
+            font-weight: bold;
+            text-align: start;
+        }
+
+        #careers h4 {
+            color: var(--color1);
+
+            text-align: center;
+        }
+
+        #careers p {
+            text-align: justify;
+            color: var(--color1);
+        }
+
+        #careers ul>li {
+            text-align: start !important;
+            color: var(--color1);
         }
 
         #img-contact {
@@ -522,14 +557,20 @@ $arrModal = $modelC->obtenerModal();
             scroll-margin-top: 50px;
         }
 
-        #section-ourservices {
+        /* #section-ourservices {
             scroll-margin-top: 150px;
+        } */
+        #section-ourservices {
+            position: absolute !important;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         #div-industrias {
             background-color: white;
             /* margin-top: -5px; */
-            padding-top: 5rem;
+            padding-top: 1rem;
             scroll-margin-top: 50px;
             position: relative;
         }
@@ -649,9 +690,10 @@ $arrModal = $modelC->obtenerModal();
             padding-top: 2rem;
         }
 
-        #section-ourservices {
+
+        /*  #section-ourservices {
             margin-top: -50rem;
-        }
+        } */
 
         #partners {
             padding-top: 4rem;
@@ -1025,7 +1067,7 @@ $arrModal = $modelC->obtenerModal();
             }
 
             #servicios {
-                padding-top: 7rem;
+                padding-top: 3rem;
             }
         }
     </style>
@@ -1260,125 +1302,129 @@ $arrModal = $modelC->obtenerModal();
     </section>
 
     <!-- Seccion de otros servicios -->
-    <div id="particles-js"></div>
-    <section id="section-ourservices" class="container-fluid py-5">
+    <div style="position:relative;">
 
-        <div>
-            <div class="container " style="text-align:center;">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <h2 id="titulo-services">Servicios</h2>
-                        <div class="bar-main" style="width:100%;">
-                            <div class="bar bar-big"></div>
+
+        <div id="particles-js">
+        </div>
+        <section id="section-ourservices" class="container-fluid py-5">
+
+            <div>
+                <div class="container " style="text-align:center;">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <h2 id="titulo-services">Servicios</h2>
+                            <div class="bar-main" style="width:100%;">
+                                <div class="bar bar-big"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="container__cards owl-carousel owl-theme" id="servicios">
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p1.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description h-100">
+                                <h4 style="color:black;">Outsourcing de Personal de TI</h4>
+                                <p>
+                                    Desarrolladores individuales y equipos de desarrollo dedicados a pedido para expandir
+                                    y respaldar su equipo interno o cubrir necesidades técnicas específicas y experiencia.
+                                </p>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p4.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h4 style="color:black;">Desarrollo de Aplicaciones</h4>
+                                <p>
+                                    Software diseñado para satisfacer sus demandas únicas. Junto con el desarrollo de software personalizado
+                                    de ciclo completo, proporcionamos mantenimiento de software y personalización basada en cada plataforma.
+                                </p>
+                                <br>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p3.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h4 style="color:black;">Desarrollo de Aplicaciones Móviles</h4>
+                                <p>Ya sea que necesite aplicaciones nativas en iOS, Android, plataformas Windows
+                                    o una solución multiplataforma, podemos ayudarlo con la solución adecuada. Ofrecemos
+                                    implementación de proyectos, integración y mantenimiento de aplicaciones móviles.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p2.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h4 style="color:black;">Administración y Soporte de Aplicaciones</h4>
+                                <p>Ayudamos a los clientes a administrar y brindar soporte a sus aplicaciones
+                                    e infraestructura tecnológica para aprovechar al máximo su inversión.
+                                </p>
+                                <br>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p5.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h4 style="color:black;">Ciberseguridad</h4>
+                                <p class="pb-2">Soluciones integrales de ciberseguridad para proteger su negocio en el cambiante panorama digital. Nuestros servicios incluyen detección de amenazas, gestión de riesgos, encriptación de datos y cumplimiento normativo para garantizar la seguridad de sus sistemas e información.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p6.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h4 style="color:black;">Inteligencia Artificial (IA)</h4>
+                                <p class="pb-2" style="font-size:.88rem;">Soluciones de IA que transformarán su negocio. Podemos ayudarle a aprovechar el poder de la IA para impulsar la eficiencia, la innovación y el crecimiento de su negocio usando modelos que incluyen análisis predictivo, modelos de aprendizaje automático, automatización y procesamiento del lenguaje natural.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        </section>
+    </div>
 
-            <div class="container__cards">
-
-                <div class="card_style1">
-                    <div class="cover">
-                        <img src="./assets/img/inicio/p1.png" alt="" />
-                        <div class="img__back"></div>
-                    </div>
-                    <div class="description">
-                        <h4 style="color:black;">Outsourcing de Personal de TI</h4>
-
-                        <p>
-                            Desarrolladores individuales y equipos de desarrollo dedicados a pedido para expandir
-                            y respaldar su equipo interno o cubrir necesidades técnicas específicas y experiencia.
-                        </p>
-                        <br>
-                        <br>
-                        <br>
-                        <!-- <a class="" href="" data-bs-toggle="modal" data-bs-target="#modal1"><input type="button" value="More" /></a> -->
-                    </div>
-                </div>
-
-                <div class="card_style1">
-                    <div class="cover">
-                        <img src="./assets/img/inicio/p4.png" alt="" />
-                        <div class="img__back"></div>
-                    </div>
-                    <div class="description">
-                        <h4 style="color:black;">Desarrollo de Aplicaciones</h4>
-                        <p>
-                            Software diseñado para satisfacer sus demandas únicas. Junto con el desarrollo de software personalizado
-                            de ciclo completo, proporcionamos mantenimiento de software y personalización basada en cada plataforma.
-                        </p>
-                        <br>
-                        <br>
-                        <!-- <a class="" href="" data-bs-toggle="modal" data-bs-target="#modal2"><input type="button" value="More" /></a> -->
-                    </div>
-                </div>
-
-                <div class="card_style1 ">
-                    <div class="cover">
-                        <img src="./assets/img/inicio/p3.png" alt="" />
-                        <div class="img__back"></div>
-                    </div>
-                    <div class="description">
-                        <h4 style="color:black;">Desarrollo de Aplicaciones Móviles</h4>
-                        <p>Ya sea que necesite aplicaciones nativas en iOS, Android, plataformas Windows
-                            o una solución multiplataforma, podemos ayudarlo con la solución adecuada. Ofrecemos
-                            implementación de proyectos, integración y mantenimiento de aplicaciones móviles.
-
-                        </p>
-                        <!-- <a class="" href="" data-bs-toggle="modal" data-bs-target="#modal3"><input type="button" value="More" /></a> -->
-                    </div>
-                </div>
-
-                <div class="card_style1">
-                    <div class="cover">
-                        <img src="./assets/img/inicio/p2.png" alt="" />
-                        <div class="img__back"></div>
-                    </div>
-                    <div class="description">
-                        <h4 style="color:black;">Administración y Soporte de Aplicaciones</h4>
-                        <p>Ayudamos a los clientes a administrar y brindar soporte a sus aplicaciones
-                            e infraestructura tecnológica para aprovechar al máximo su inversión.
-                        </p>
-                        <br>
-                        <br>
-                        <br>
-                        <!-- <a class="" href="" data-bs-toggle="modal" data-bs-target="#modal4"><input type="button" value="More" /></a> -->
-                    </div>
-                </div>
-                <div class="card_style1">
-                    <div class="cover">
-                        <img src="./assets/img/inicio/.png" alt="" />
-                        <div class="img__back"></div>
-                    </div>
-                    <div class="description">
-                        <h4 style="color:black;">Ciberseguridad</h4>
-                        <p>Soluciones integrales de ciberseguridad para proteger su negocio en el cambiante panorama digital. Nuestros servicios incluyen detección de amenazas, gestión de riesgos, encriptación de datos y cumplimiento normativo para garantizar la seguridad de sus sistemas e información.
-                        </p>
-                        <br>
-                        <br>
-                        <br>
-                        <!-- <a class="" href="" data-bs-toggle="modal" data-bs-target="#modal4"><input type="button" value="More" /></a> -->
-                    </div>
-                </div>
-                <div class="card_style1">
-                    <div class="cover">
-                        <img src="./assets/img/inicio/.png" alt="" />
-                        <div class="img__back"></div>
-                    </div>
-                    <div class="description">
-                        <h4 style="color:black;">Inteligencia Artificial (AI)</h4>
-                        <p>Soluciones de AI que transformarán su negocio. Podemos ayudarle a aprovechar el poder de la AI para impulsar la eficiencia, la innovación y el crecimiento de su negocio usando modelos que incluyen análisis predictivo, modelos de aprendizaje automático, automatización y procesamiento del lenguaje natural.
-                        </p>
-                        <br>
-                        <br>
-                        <br>
-                        <!-- <a class="" href="" data-bs-toggle="modal" data-bs-target="#modal4"><input type="button" value="More" /></a> -->
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
 
 
@@ -2892,124 +2938,69 @@ $arrModal = $modelC->obtenerModal();
 
                                     <div class="accordion-body">
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
-                                                    BI / Analytics
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    Telerik Report
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    Reporting Services
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    MATLAB
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    Redux
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    AWS AI
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    PyTorch
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
                                                     TensorFlow
-
                                                 </p>
-
                                             </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    PyTorch
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    AWS AI
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    Redux
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    MATLAB
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    Reporting Services
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
 
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    BI / Analytics
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    Telerik Report
+                                                </p>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -3317,7 +3308,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                SonarQube
+                                                    SonarQube
 
                                                 </p>
 
@@ -3331,7 +3322,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Checkmarx
+                                                    Checkmarx
 
                                                 </p>
 
@@ -3345,7 +3336,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Veracode
+                                                    Veracode
 
                                                 </p>
 
@@ -3359,7 +3350,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Microsoft SDL
+                                                    Microsoft SDL
 
                                                 </p>
 
@@ -3373,7 +3364,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                GitHub Advanced Security
+                                                    GitHub Advanced Security
 
                                                 </p>
 
@@ -3387,7 +3378,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                AWS Security Hub
+                                                    AWS Security Hub
 
                                                 </p>
 
@@ -3415,7 +3406,7 @@ $arrModal = $modelC->obtenerModal();
                                             <span>
                                                 <p>
 
-                                                NLP
+                                                    NLP
 
                                                 </p>
 
@@ -3430,7 +3421,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Machine Learning
+                                                    Machine Learning
 
                                                 </p>
 
@@ -3445,7 +3436,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                OpenCV
+                                                    OpenCV
 
                                                 </p>
 
@@ -3460,7 +3451,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                YOLO (You Only Look Once)
+                                                    YOLO (You Only Look Once)
 
                                                 </p>
 
@@ -3475,7 +3466,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Scikit-learn
+                                                    Scikit-learn
 
                                                 </p>
 
@@ -3490,7 +3481,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                PyTorch
+                                                    PyTorch
 
                                                 </p>
 
@@ -3504,7 +3495,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Generative AI
+                                                    Generative AI
 
                                                 </p>
 
@@ -3518,7 +3509,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Deep Learning
+                                                    Deep Learning
 
                                                 </p>
 
@@ -3532,7 +3523,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                TensorFlow
+                                                    TensorFlow
 
                                                 </p>
 
@@ -3546,7 +3537,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                OCR
+                                                    OCR
 
                                                 </p>
 
@@ -3618,18 +3609,60 @@ $arrModal = $modelC->obtenerModal();
     <section id="careers">
         <br>
         <br>
-        <div class="container " style="text-align:center;">
+        <div class="container-fluid" style="text-align:center;padding-right:5rem;padding-left:5rem;">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <h2 style="color:white;font-weight:bold;">Trabaja con nosotros</h2>
+                    <h2>Trabaja con nosotros</h2>
                     <div class="bar-main" style="width:100%;">
                         <div class="bar bar-big"></div>
-                        <div class="py-5 justify-content-center">
-                            <img src="./assets/img/inicio/wk_us.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-lg-4">
+                    <h3>Únete a Sapiens Consulting</h3>
+                    <p>Buscamos talento técnico con actitud proactiva y pasión por la innovación. Nuestro equipo está formado por profesionales altamente calificados, seleccionados mediante un proceso riguroso de evaluación técnica, aptitud y comunicación.</p>
+                    <p>Áreas en las que buscamos talento: </p>
+                    <ul>
+                        <li>Desarrolladores</li>
+                        <li>Analistas de Sistemas </li>
+                        <li>Administradores de Bases de Datos </li>
+                        <li>Expertos en BPM </li>
+                        <li>Gerentes de Proyectos</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./assets/img/icons/peru.png" width="100%" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <h4>¿Te apasionan los desafíos y la tecnología? </h4>
+                    <h4 class="py-4">Únete a un entorno colaborativo, dinámico e innovador.</h4>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg">
+                            <span style="font-size: 3rem;color:var(--color1);">Se parte</span>
                         </div>
                     </div>
-
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-lg-4">
+                            <span style="font-size: 1rem;color:var(--color1);">del equipo</span>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-3">
+                            <span style="font-size: 2rem;color:var(--color1);">Postula</span>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-around pt-2">
+                        <div class="col-lg-4">
+                            <img src="./assets/img/icons/ico1.png" width="100%" alt="">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./assets/img/icons/ico2.png" width="100%" alt="">
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -3831,6 +3864,30 @@ $arrModal = $modelC->obtenerModal();
                 items: 3,
             },
         },
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $(".container__cards").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            },
+            navText: ["&#10094;", "&#10095;"] // Flechas personalizadas (← y →)
+        });
     });
 </script>
 

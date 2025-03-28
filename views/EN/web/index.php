@@ -1442,16 +1442,10 @@ $arrModal = $modelC->obtenerModal();
         </div>
     </div>
 
-    <br><!--  -->
-    <br><!--  -->
-    <br>
+    <br><!--  --> 
     <!-- Seccion de industrias -->
 
     <section id="div-industrias">
-        <br>
-        <br>
-
-
         <div class="container" style="text-align:center;">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
@@ -2815,6 +2809,111 @@ $arrModal = $modelC->obtenerModal();
                                             </span>
 
                                         </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Clean Architecture
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Azure DevOps
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Microsoft Fabric
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Containers
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Docker
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Git
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Kubernetes
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2837,126 +2936,71 @@ $arrModal = $modelC->obtenerModal();
 
                                 <div id="item8" class="accordion-collapse collapse" aria-labelledby="flush5" data-bs-parent="#accordionFlushExample">
 
-                                    <div class="accordion-body">
+                                <div class="accordion-body">
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
-                                                    BI / Analytics
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    Telerik Report
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    Reporting Services
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    MATLAB
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    Redux
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    AWS AI
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    PyTorch
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
                                                     TensorFlow
-
                                                 </p>
-
                                             </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    PyTorch
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    AWS AI
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    Redux
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    MATLAB
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    Reporting Services
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
 
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    BI / Analytics
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    Telerik Report
+                                                </p>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -3576,9 +3620,9 @@ $arrModal = $modelC->obtenerModal();
                     <h2 style="color:white;font-weight:bold;">Work with us</h2>
                     <div class="bar-main" style="width:100%;">
                         <div class="bar bar-big"></div>
-                        <div class="py-5 justify-content-center">
+                        <!-- <div class="py-5 justify-content-center">
                             <img src="./assets/img/inicio/wk_us.png" width="100%" alt="">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -3590,12 +3634,12 @@ $arrModal = $modelC->obtenerModal();
         <!-- <div class="container"> -->
         <div class="row">
             <div class="col-12 col-lg-12">
-                <!-- <div style="text-align:center;color:white;font-size:18px;"><span>Sapiens Corporation is continuously in search of
+                <div style="text-align:center;color:white;font-size:18px;"><span>Sapiens Corporation is continuously in search of
                             resources with technical skills, excellent attitude and self-motivated. Our recruitment process is a demanding
                             and include tests of attitude, technical evaluation, communication skills and validation of professional references.
                             Our team consists only of professionals with university studies. We seek dynamic, results-oriented individuals,
                             interested to work in a thoughtful, collaborative, innovative and friendly environment. We seek resources mainly
-                            in the following areas: Developers, Systems analysts, Database administrator, Experts in BPM, Project Managers.</span></div> -->
+                            in the following areas: Developers, Systems analysts, Database administrator, Experts in BPM, Project Managers.</span></div>
                 <br>
                 <!-- <div style="text-align:center;color:white;font-weight:bold;font-size:20px;"><span>Interested in joining us? </span></div>
                     <br>

@@ -75,7 +75,7 @@ canvas{
 
 #particles-js{
   width: 100%;
-  height: 100%;
+  height: auto!important;
   background-color:#012e6d;
   background-image: url('');
   background-size: cover;

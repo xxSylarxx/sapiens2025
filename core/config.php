@@ -1,7 +1,6 @@
 <?php
-
 // config server
-define("WEBURL", 'http://admin-sapiens-2025.demo');
+define("WEBURL", 'http://sapiens2025.demo');
 define("DIROOT", dirname(__DIR__));
 
 // config pagweb

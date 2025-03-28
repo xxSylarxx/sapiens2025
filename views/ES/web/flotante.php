@@ -1,8 +1,8 @@
 <style>
     .flotante {
         position: fixed;
-        bottom: 20%;
-        left: 90%;
+        bottom: 38%;
+        right: 2%;
         z-index: 99;
     }
 
@@ -33,17 +33,21 @@
         background-color: #00A6B6;
         padding: 1rem;
         margin-top: 1rem;
-
+        color: white!important;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
         border-radius: 10px;
     }
+
     .f2 a {
         color: white;
     }
-    
 </style>
 
 <div class="flotante">
-    <div class="f1"><a href="https://form.typeform.com/to/CHUVngFJ" target="_blank">Contáctanos</a></div>
-    <div class="f2"><a href="https://form.typeform.com/to/Rji8VTdp" target="_blank">Postula</a></div>
+    <a href="https://form.typeform.com/to/CHUVngFJ" target="_blank">
+        <div class="f1">Contáctanos</div>
+    </a>
+    <a href="https://form.typeform.com/to/Rji8VTdp" target="_blank">
+        <div class="f2">Postula</div>
+    </a>
 </div>
