@@ -1,5 +1,3 @@
-
-oe longoria
 <?php
 $modelA = new BannerModel();
 $modelB = new NoticiasesModel();
@@ -10,10 +8,6 @@ $arrNoticias = $modelB->listarNoticiasWeb(0, 5, '%');
 $arrModal = $modelC->obtenerModal();
 //var_dump($arrModal);
 //exit;
-
-echo('hola mundo');
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
