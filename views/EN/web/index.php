@@ -47,8 +47,8 @@ $arrModal = $modelC->obtenerModal();
     <!-- estilos de fondo con particulas -->
     <link rel="stylesheet" media="screen" href="<?php echo WEBURL ?>/assets/css/estiloparticulas.css">
 
-<!-- owl -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -60,7 +60,7 @@ $arrModal = $modelC->obtenerModal();
 
 <body>
 
-<style>
+    <style>
         .abajo {
             background-color: var(--color6);
             -moz-box-shadow: 0 3px 3px rgba(94, 94, 94, 0.75);
@@ -499,10 +499,18 @@ $arrModal = $modelC->obtenerModal();
             background-position: center center;
             padding-top: 3rem;
             padding-bottom: 3rem;
-            background-color: var(--color1);
+            /*  background-color: var(--color1); */
             background-size: 133%;
             background-repeat: no-repeat;
+            text-align: center;
+            padding-right: 5rem;
+            padding-left: 5rem;
         }
+
+        #careers .img-work {
+            width: 100%;
+        }
+
 
         #careers h2 {
             color: var(--color1);
@@ -832,9 +840,31 @@ $arrModal = $modelC->obtenerModal();
             } */
         }
 
+        #cards-2025 {
+            position: relative;
+        }
 
+        @media only screen and (min-width:350px) and (max-width:600px) {
+            #careers {
+                background: none;
+                background-color: #E5ECF2;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
 
-        @media only screen and (min-width:410px) and (max-width:600px) {
+            #careers .img-work {
+                width: 50%;
+            }
+
+            #cards-2025 {
+                padding-top: 10rem;
+                height: 800px;
+            }
+
+            #div-about {
+                margin-bottom: 5rem;
+            }
+
             #div-about #about {
                 padding-top: 22rem;
             }
@@ -1300,128 +1330,133 @@ $arrModal = $modelC->obtenerModal();
     </section>
 
     <!-- Seccion de otros servicios -->
-    <div style="position:relative;">
+    <div id="cards-2025">
 
 
-    <div id="particles-js">
-    </div>
-    <section id="section-ourservices" class="container-fluid py-5">
-
-        <div>
-            <div class="container " style="text-align:center;">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <h2 id="titulo-services">Servicios</h2>
-                        <div class="bar-main" style="width:100%;">
-                            <div class="bar bar-big"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container__cards owl-carousel owl-theme" id="servicios">
-                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                    <div class="card_style1 h-100">
-                        <div class="cover">
-                            <img src="./assets/img/inicio/p1.png" alt="" />
-                            <div class="img__back"></div>
-                        </div>
-                        <div class="description h-100">
-                            <h4 style="color:black;">Outsourcing de Personal de TI</h4>
-                            <p>
-                                Desarrolladores individuales y equipos de desarrollo dedicados a pedido para expandir
-                                y respaldar su equipo interno o cubrir necesidades técnicas específicas y experiencia.
-                            </p>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                    <div class="card_style1 h-100">
-                        <div class="cover">
-                            <img src="./assets/img/inicio/p4.png" alt="" />
-                            <div class="img__back"></div>
-                        </div>
-                        <div class="description">
-                            <h4 style="color:black;">Desarrollo de Aplicaciones</h4>
-                            <p>
-                                Software diseñado para satisfacer sus demandas únicas. Junto con el desarrollo de software personalizado
-                                de ciclo completo, proporcionamos mantenimiento de software y personalización basada en cada plataforma.
-                            </p>
-                            <br>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                    <div class="card_style1 h-100">
-                        <div class="cover">
-                            <img src="./assets/img/inicio/p3.png" alt="" />
-                            <div class="img__back"></div>
-                        </div>
-                        <div class="description">
-                            <h4 style="color:black;">Desarrollo de Aplicaciones Móviles</h4>
-                            <p>Ya sea que necesite aplicaciones nativas en iOS, Android, plataformas Windows
-                                o una solución multiplataforma, podemos ayudarlo con la solución adecuada. Ofrecemos
-                                implementación de proyectos, integración y mantenimiento de aplicaciones móviles.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                    <div class="card_style1 h-100">
-                        <div class="cover">
-                            <img src="./assets/img/inicio/p2.png" alt="" />
-                            <div class="img__back"></div>
-                        </div>
-                        <div class="description">
-                            <h4 style="color:black;">Administración y Soporte de Aplicaciones</h4>
-                            <p>Ayudamos a los clientes a administrar y brindar soporte a sus aplicaciones
-                                e infraestructura tecnológica para aprovechar al máximo su inversión.
-                            </p>
-                            <br>
-                            <br>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                    <div class="card_style1 h-100">
-                        <div class="cover">
-                            <img src="./assets/img/inicio/p5.png" alt="" />
-                            <div class="img__back"></div>
-                        </div>
-                        <div class="description">
-                            <h4 style="color:black;">Ciberseguridad</h4>
-                            <p class="pb-2">Soluciones integrales de ciberseguridad para proteger su negocio en el cambiante panorama digital. Nuestros servicios incluyen detección de amenazas, gestión de riesgos, encriptación de datos y cumplimiento normativo para garantizar la seguridad de sus sistemas e información.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                    <div class="card_style1 h-100">
-                        <div class="cover">
-                            <img src="./assets/img/inicio/p6.png" alt="" />
-                            <div class="img__back"></div>
-                        </div>
-                        <div class="description">
-                            <h4 style="color:black;">Inteligencia Artificial (IA)</h4>
-                            <p class="pb-2" style="font-size:.88rem;">Soluciones de IA que transformarán su negocio. Podemos ayudarle a aprovechar el poder de la IA para impulsar la eficiencia, la innovación y el crecimiento de su negocio usando modelos que incluyen análisis predictivo, modelos de aprendizaje automático, automatización y procesamiento del lenguaje natural.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div id="particles-js">
         </div>
-    </section>
-</div>
+        <section id="section-ourservices" class="container-fluid py-5">
+
+            <div>
+                <div class="container " style="text-align:center;">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <h2 id="titulo-services">Servicios</h2>
+                            <div class="bar-main" style="width:100%;">
+                                <div class="bar bar-big"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__cards owl-carousel owl-theme" id="servicios">
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p1.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description h-100">
+                                <h4 style="color:black;">IT Staff Augmentation</h4>
+                                <p>
+                                    Individual developers and dedicated development teams on demand
+                                    to expand and support your in-house team or cover specific technical
+                                    needs and domain expertise.
+                                </p>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p4.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h4 style="color:black;">Application Development</h4>
+                                <p>
+                                    Software tailored to meet your unique demands. Along with full-cycle custom
+                                    software development, we provide software maintenance and platform-based customization.
+                                </p>
+                                <br>
+                                <br>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p3.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h4 style="color:black;">Mobile Apps Development</h4>
+                                <p>Whether you need native apps on iOS, Android, Windows platforms,
+                                    or a cross-platform solution, we can help you with the appropriate solution.
+                                    We offer project implementation, integration, and maintenance of mobile applications.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p2.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h4 style="color:black;">Management and Support</h4>
+                                <p>We help clients managing and providing support to their
+                                    applications and technology infrastructure to get the most
+                                    out of their investment.
+                                </p>
+                                <br>
+                                <br>
+                                <br>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p5.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h4 style="color:black;">Cybersecurity</h4>
+                                <p style="font-size:.9rem;" class="pb-4">Comprehensive cybersecurity solutions to safeguard your business in the constantly changing digital landscape. Our services include threat detection, risk management, data encryption, and compliance, ensuring your systems and information remain secure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 h-100">
+                            <div class="cover">
+                                <img src="./assets/img/inicio/p6.png" alt="" />
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h4 style="color:black;">Artificial Intelligence (AI)</h4>
+                                <p class="pb-2" style="font-size:.96rem;">AI solutions that will transform your business. We can help you take advantage of AI to increase efficiency, innovation, and growth through predictive analytics, machine learning models, automation, and natural language processing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
 
 
 
@@ -1535,7 +1570,7 @@ $arrModal = $modelC->obtenerModal();
         </div>
     </div>
 
-    <br><!--  --> 
+    <br><!--  -->
     <!-- Seccion de industrias -->
 
     <section id="div-industrias">
@@ -3052,7 +3087,7 @@ $arrModal = $modelC->obtenerModal();
 
                                 <div id="item8" class="accordion-collapse collapse" aria-labelledby="flush5" data-bs-parent="#accordionFlushExample">
 
-                                <div class="accordion-body">
+                                    <div class="accordion-body">
                                         <div class="d-flex flex-row">
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
                                             <span>
@@ -3424,7 +3459,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                SonarQube
+                                                    SonarQube
 
                                                 </p>
 
@@ -3438,7 +3473,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Checkmarx
+                                                    Checkmarx
 
                                                 </p>
 
@@ -3452,7 +3487,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Veracode
+                                                    Veracode
 
                                                 </p>
 
@@ -3466,7 +3501,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Microsoft SDL
+                                                    Microsoft SDL
 
                                                 </p>
 
@@ -3480,7 +3515,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                GitHub Advanced Security
+                                                    GitHub Advanced Security
 
                                                 </p>
 
@@ -3494,7 +3529,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                AWS Security Hub
+                                                    AWS Security Hub
 
                                                 </p>
 
@@ -3522,7 +3557,7 @@ $arrModal = $modelC->obtenerModal();
                                             <span>
                                                 <p>
 
-                                                NLP
+                                                    NLP
 
                                                 </p>
 
@@ -3537,7 +3572,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Machine Learning
+                                                    Machine Learning
 
                                                 </p>
 
@@ -3552,7 +3587,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                OpenCV
+                                                    OpenCV
 
                                                 </p>
 
@@ -3567,7 +3602,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                YOLO (You Only Look Once)
+                                                    YOLO (You Only Look Once)
 
                                                 </p>
 
@@ -3582,7 +3617,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Scikit-learn
+                                                    Scikit-learn
 
                                                 </p>
 
@@ -3597,7 +3632,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                PyTorch
+                                                    PyTorch
 
                                                 </p>
 
@@ -3611,7 +3646,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Generative AI
+                                                    Generative AI
 
                                                 </p>
 
@@ -3625,7 +3660,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                Deep Learning
+                                                    Deep Learning
 
                                                 </p>
 
@@ -3639,7 +3674,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                TensorFlow
+                                                    TensorFlow
 
                                                 </p>
 
@@ -3653,7 +3688,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                OCR
+                                                    OCR
 
                                                 </p>
 
@@ -3723,13 +3758,11 @@ $arrModal = $modelC->obtenerModal();
     <?php
     include_once 'floating.php';
     ?>
-    <br>
-    <br>
-    <br>
-    <section id="careers">
+   
+    <section id="careers" class="container-fluid">
         <br>
         <br>
-        <div class="container-fluid" style="text-align:center;padding-right:5rem;padding-left:5rem;">
+        <div>
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <h2>Work with us</h2>
@@ -3745,7 +3778,7 @@ $arrModal = $modelC->obtenerModal();
                     <p>Roles:</p>
                     <ul>
                         <li>Developers</li>
-                       <!--  <li>Analistas de Sistemas </li> -->
+                        <!--  <li>Analistas de Sistemas </li> -->
                         <li>Database Administrators </li>
                         <li>System Analysts</li>
                         <li>Project Managers</li>
@@ -3774,10 +3807,10 @@ $arrModal = $modelC->obtenerModal();
                     </div>
                     <div class="row d-flex justify-content-around pt-2">
                         <div class="col-lg-4">
-                            <img src="./assets/img/icons/ico1.png" width="100%" alt="">
+                            <img class="img-work" src="./assets/img/icons/ico1.png" alt="">
                         </div>
                         <div class="col-lg-4">
-                            <img src="./assets/img/icons/ico2.png" width="100%" alt="">
+                            <img class="img-work" src="./assets/img/icons/ico2.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -3786,8 +3819,8 @@ $arrModal = $modelC->obtenerModal();
             </div>
         </div>
     </section>
-    <section id="div-contact">
-        <!-- <div class="container-fluid" id="img-contact">
+    <!--   <section id="div-contact">
+        <div class="container-fluid" id="img-contact">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-12" style="text-align:center;color:white;font-weight:bold;padding-top:12rem;padding-bottom:12rem;">
@@ -3798,7 +3831,7 @@ $arrModal = $modelC->obtenerModal();
 
             </div>
 
-        </div> -->
+        </div> 
         <br>
         <br>
         <br>
@@ -3833,21 +3866,6 @@ $arrModal = $modelC->obtenerModal();
 
                         </div>
                     </div>
-                    <!-- <div class="row pt-4">
-                        <div class="col-2 col-lg-2">
-                            <img src="./assets/img/icons/gps.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-6 col-lg-8">
-                            <p style="color:white;">Perú Office<br>Calle Michigan 230, Rinconada del Lago, La Molina 15026, Lima – Perú.</p>
-
-                        </div>
-                    </div> 
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-11 col-lg-11 " style="border-style: dashed;border-width: 0px 0px 1px 0px;border-color: #FFFFFF99;padding: 0px 0px 25px 0px;">
-
-                        </div>
-                    </div>-->
-
                 </div>
                 <div class="col-12 col-lg-8 p-5" style="background-color: #EFF2F7;">
                     <form id="formContacto" name="formcontact" onsubmit="enviarCorreo(event)">
@@ -3899,7 +3917,7 @@ $arrModal = $modelC->obtenerModal();
     <br>
     <br>
     <br>
-    <br>
+    <br> -->
 
 
     <?php include_once './views/includes/footer.php'; ?>

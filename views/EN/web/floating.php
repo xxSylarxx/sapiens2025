@@ -2,7 +2,7 @@
     .floating {
         position: fixed;
         bottom: 36%;
-        left: 90%;
+        right: 2%;
         z-index: 99;
     }
 
@@ -43,6 +43,18 @@
 
     .f2 a {
         color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        /* .floating {
+           display: none;
+        } */
+        .floating {
+
+            bottom: 60%;
+
+        }
     }
 </style>
 

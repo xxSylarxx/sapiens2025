@@ -33,13 +33,26 @@
         background-color: #00A6B6;
         padding: 1rem;
         margin-top: 1rem;
-        color: white!important;
+        color: white !important;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
         border-radius: 10px;
     }
 
     .f2 a {
         color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+       /*  .flotante {
+            display: none;
+        } */
+
+        .flotante {
+
+            bottom: 60%;
+
+        }
+
     }
 </style>
 

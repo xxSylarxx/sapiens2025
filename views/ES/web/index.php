@@ -499,9 +499,16 @@ $arrModal = $modelC->obtenerModal();
             background-position: center center;
             padding-top: 3rem;
             padding-bottom: 3rem;
-            background-color: var(--color1);
+            /*  background-color: var(--color1); */
             background-size: 133%;
             background-repeat: no-repeat;
+            text-align: center;
+            padding-right: 5rem;
+            padding-left: 5rem;
+        }
+
+        #careers .img-work {
+            width: 100%;
         }
 
         #careers h2 {
@@ -832,9 +839,31 @@ $arrModal = $modelC->obtenerModal();
             } */
         }
 
+        #cards-2025 {
+            position: relative;
+        }
 
+        @media only screen and (min-width:350px) and (max-width:600px) {
+            #careers {
+                background: none;
+                background-color: #E5ECF2;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
 
-        @media only screen and (min-width:410px) and (max-width:600px) {
+            #careers .img-work {
+                width: 50%;
+            }
+
+            #cards-2025 {
+                padding-top: 10rem;
+                height: 800px;
+            }
+
+            #div-about {
+                margin-bottom: 5rem;
+            }
+
             #div-about #about {
                 padding-top: 22rem;
             }
@@ -1184,7 +1213,8 @@ $arrModal = $modelC->obtenerModal();
             </div>
         </div>
     </div>
-
+    <br>
+    <br>
     <!---Servicios de exito -->
     <section id="servicios">
 
@@ -1302,7 +1332,7 @@ $arrModal = $modelC->obtenerModal();
     </section>
 
     <!-- Seccion de otros servicios -->
-    <div style="position:relative;">
+    <div id="cards-2025">
 
 
         <div id="particles-js">
@@ -3738,13 +3768,11 @@ $arrModal = $modelC->obtenerModal();
         </div>
     </section>
 
-    <br>
-    <br>
-    <br>
-    <section id="careers">
+
+    <section id="careers" class="container-fluid">
         <br>
         <br>
-        <div class="container-fluid" style="text-align:center;padding-right:5rem;padding-left:5rem;">
+        <div>
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <h2>Trabaja con nosotros</h2>
@@ -3789,10 +3817,10 @@ $arrModal = $modelC->obtenerModal();
                     </div>
                     <div class="row d-flex justify-content-around pt-2">
                         <div class="col-lg-4">
-                            <img src="./assets/img/icons/ico1.png" width="100%" alt="">
+                            <img class="img-work" src="./assets/img/icons/ico1.png" alt="">
                         </div>
                         <div class="col-lg-4">
-                            <img src="./assets/img/icons/ico2.png" width="100%" alt="">
+                            <img class="img-work" src="./assets/img/icons/ico2.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -3801,9 +3829,9 @@ $arrModal = $modelC->obtenerModal();
             </div>
         </div>
     </section>
-    <section id="div-contact">
+    <!--  <section id="div-contact">
         <div class="container-fluid" id="img-contact">
-            <!-- <div class="container">
+            <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-12" style="text-align:center;color:white;font-weight:bold;padding-top:12rem;padding-bottom:12rem;">
                         <h1>Contáctanos</h1>
@@ -3811,7 +3839,7 @@ $arrModal = $modelC->obtenerModal();
 
                 </div>
 
-            </div> -->
+            </div>
 
         </div>
         <br>
@@ -3848,21 +3876,6 @@ $arrModal = $modelC->obtenerModal();
 
                         </div>
                     </div>
-                    <!-- <div class="row pt-4">
-                        <div class="col-2 col-lg-2">
-                            <img src="./assets/img/icons/gps.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-6 col-lg-8">
-                            <p style="color:white;">Perú Office<br>Calle Michigan 230, Rinconada del Lago, La Molina 15026, Lima – Perú.</p>
-
-                        </div>
-                    </div> 
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-11 col-lg-11 " style="border-style: dashed;border-width: 0px 0px 1px 0px;border-color: #FFFFFF99;padding: 0px 0px 25px 0px;">
-
-                        </div>
-                    </div>-->
-
                 </div>
                 <div class="col-12 col-lg-8 p-5" style="background-color: #EFF2F7;">
                     <form id="formContacto" name="formcontact" onsubmit="enviarCorreo(event)">
@@ -3915,7 +3928,7 @@ $arrModal = $modelC->obtenerModal();
     <br>
     <br>
     <br>
-
+ -->
 
     <?php include_once './views/includes/footeres.php'; ?>
 
