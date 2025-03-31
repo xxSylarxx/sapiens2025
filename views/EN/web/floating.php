@@ -21,19 +21,21 @@
 
     .f1 {
         padding: 1rem;
-        background-color: #B8CCEB;
+        /* background-color: #B8CCEB; */
+        background-color: var(--color1);
         margin-top: 1rem;
-
+        color: white !important;
         border-radius: 10px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
     }
 
     .f1 a {
-        color: var(--color1);
+        color: white !important;
     }
 
     .f2 {
-        background-color: #00A6B6;
+        /* background-color: #00A6B6; */
+        background-color: #B8CCEB;
         padding: 1rem;
         margin-top: 1rem;
         color: white !important;
@@ -60,7 +62,7 @@
 
 <div class="floating">
     <a href="https://form.typeform.com/to/D9aWGSyl" target="_blank">
-        <div class="f1">Contact Us</div>
+        <div class="f1">CONTACT US</div>
     </a>
     <a href="https://form.typeform.com/to/Y5L33Xfb" target="_blank">
         <div class="f2">Join Us</div>

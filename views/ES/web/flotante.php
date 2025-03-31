@@ -18,19 +18,21 @@
 
     .f1 {
         padding: 1rem;
-        background-color: #B8CCEB;
+       /*  background-color: #B8CCEB; */
+        background-color: var(--color1);
         margin-top: 1rem;
-
+        color: white !important;
         border-radius: 10px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
     }
 
     .f1 a {
-        color: var(--color1);
+        color: white;
     }
 
     .f2 {
-        background-color: #00A6B6;
+        /* background-color: #00A6B6; */
+        background-color: #B8CCEB;
         padding: 1rem;
         margin-top: 1rem;
         color: white !important;
@@ -43,7 +45,7 @@
     }
 
     @media screen and (max-width: 768px) {
-       /*  .flotante {
+        /*  .flotante {
             display: none;
         } */
 
@@ -58,7 +60,7 @@
 
 <div class="flotante">
     <a href="https://form.typeform.com/to/CHUVngFJ" target="_blank">
-        <div class="f1">Contáctanos</div>
+        <div class="f1">CONTÁCTANOS</div>
     </a>
     <a href="https://form.typeform.com/to/Rji8VTdp" target="_blank">
         <div class="f2">Postula</div>
