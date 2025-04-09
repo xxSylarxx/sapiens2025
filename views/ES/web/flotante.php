@@ -32,7 +32,7 @@
 
     .f2 {
         /* background-color: #00A6B6; */
-        background-color: #B8CCEB;
+        background-color: #00A6B6;
         padding: 1rem;
         margin-top: 1rem;
         color: white !important;
@@ -60,9 +60,9 @@
 
 <div class="flotante">
     <a href="https://form.typeform.com/to/CHUVngFJ" target="_blank">
-        <div class="f1">CONTÁCTANOS</div>
+        <div class="f1">CONTACTANOS</div>
     </a>
     <a href="https://form.typeform.com/to/Rji8VTdp" target="_blank">
-        <div class="f2">Postula</div>
+        <div class="f2">POSTULA</div>
     </a>
 </div>

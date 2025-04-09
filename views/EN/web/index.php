@@ -462,7 +462,7 @@ $arrModal = $modelC->obtenerModal();
 
         .title-pe {
             color: var(--color5);
-            font-size: 18px;
+            font-size: 19px;
             font-weight: none;
         }
 
@@ -500,7 +500,7 @@ $arrModal = $modelC->obtenerModal();
             padding-top: 3rem;
             padding-bottom: 3rem;
             /*  background-color: var(--color1); */
-           /*  background-size: 133%; */
+            /*  background-size: 133%; */
             background-repeat: no-repeat;
             text-align: center;
             padding-right: 5rem;
@@ -1122,9 +1122,9 @@ $arrModal = $modelC->obtenerModal();
                                         <h2 class="tittle-banner1">Gain Agility and Expand your&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> Expertise with Developers on Demand </h2>
 
                                         <br>
-                                        <button class="button2">
+                                        <!-- <button class="button2">
                                             <a class="" href="" data-bs-toggle="modal" data-bs-target="#modalcontact">Contact Us</a>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                             <?php } else if ($key == 1) { ?>
@@ -1133,9 +1133,9 @@ $arrModal = $modelC->obtenerModal();
                                         <h2 class="tittle-banner1">We bring speed, efficiency and expertise to your software <br>development team with the trust and commitment you need.<br> Take advantage of nearshore advantages for flexibility and value. </h2>
 
                                         <br>
-                                        <button class="button2">
+                                        <!-- <button class="button2">
                                             <a class="" href="" data-bs-toggle="modal" data-bs-target="#modalcontact">Contact Us</a>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                             <?php } ?>
@@ -1341,7 +1341,7 @@ $arrModal = $modelC->obtenerModal();
                 <div class="container " style="text-align:center;">
                     <div class="row justify-content-center">
                         <div class="col-lg-12">
-                            <h2 id="titulo-services">Servicios</h2>
+                            <h2 id="titulo-services">Our Services</h2>
                             <div class="bar-main" style="width:100%;">
                                 <div class="bar bar-big"></div>
                             </div>
@@ -2656,7 +2656,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                    Saas
+                                                    SaaS
 
                                                 </p>
 
@@ -3164,9 +3164,8 @@ $arrModal = $modelC->obtenerModal();
                                 <h2 class="accordion-header" id="flush9">
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog9.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item9" aria-expanded="false" aria-controls="item9">
-
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-node-js"></i>&nbsp;Libraries & Frameworks</div>
-
+                                        <div><img src="./assets/img/icons/libraries.png" alt="" style="width:25px; height:25px;"></div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;Libraries & Frameworks</div>
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
                                     </button>
@@ -3291,7 +3290,7 @@ $arrModal = $modelC->obtenerModal();
 
                                                 <p>
 
-                                                    Angular TypeScript
+                                                    Angular (TypeScript)
 
                                                 </p>
 
@@ -3308,8 +3307,8 @@ $arrModal = $modelC->obtenerModal();
                                 <h2 class="accordion-header" id="flush10">
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog10.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item10" aria-expanded="false" aria-controls="item10">
-
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-node-js"></i>&nbsp;CRM / ERP</div>
+                                        <div><img src="./assets/img/icons/crm.png" alt="" style="width:25px; height:25px;"></div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;CRM / ERP</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -3375,7 +3374,8 @@ $arrModal = $modelC->obtenerModal();
                                 <h2 class="accordion-header" id="flush11">
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog11.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item11" aria-expanded="false" aria-controls="item11">
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-node-js"></i>&nbsp;Cybersecurity</div>
+                                        <div><img src="./assets/img/icons/cyber.png" alt="" style="width:25px; height:25px;"></div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;Cybersecurity</div>
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
                                     </button>
                                 </h2>
@@ -3399,22 +3399,7 @@ $arrModal = $modelC->obtenerModal();
                                             <span>
                                                 <p>
 
-                                                    Microsoft Azure Active
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    Directory
+                                                    Microsoft Azure Active Directory
 
                                                 </p>
 
@@ -3544,8 +3529,8 @@ $arrModal = $modelC->obtenerModal();
                             <div class="accordion-item ">
                                 <h2 class="accordion-header" id="flush12">
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog12.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item12" aria-expanded="false" aria-controls="item12">
-
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-node-js"></i>&nbsp;AI</div>
+                                        <div><img src="./assets/img/icons/ai.png" alt="" style="width:25px; height:25px;"></div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;AI</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
                                     </button>
@@ -3758,14 +3743,14 @@ $arrModal = $modelC->obtenerModal();
     <?php
     include_once 'floating.php';
     ?>
-   
+
     <section id="careers" class="container-fluid">
         <br>
         <br>
         <div>
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <h2>Work with us</h2>
+                    <h2>Work with Us</h2>
                     <div class="bar-main" style="width:100%;">
                         <div class="bar bar-big"></div>
                     </div>
@@ -3785,7 +3770,7 @@ $arrModal = $modelC->obtenerModal();
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                    <img src="./assets/img/icons/peru.png" width="100%" alt="">
+                    <img src="./assets/img/icons/peru.png" width="100%" alt="" style="opacity: 0.1;">
                 </div>
                 <div class="col-lg-4">
                     <h4>Are you passionate about technology and tackling challenges? </h4>

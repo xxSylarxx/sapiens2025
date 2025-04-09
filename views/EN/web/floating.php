@@ -35,7 +35,7 @@
 
     .f2 {
         /* background-color: #00A6B6; */
-        background-color: #B8CCEB;
+        background-color: #00A6B6;
         padding: 1rem;
         margin-top: 1rem;
         color: white !important;
@@ -65,6 +65,6 @@
         <div class="f1">CONTACT US</div>
     </a>
     <a href="https://form.typeform.com/to/Y5L33Xfb" target="_blank">
-        <div class="f2">Join Us</div>
+        <div class="f2">JOIN US</div>
     </a>
 </div>

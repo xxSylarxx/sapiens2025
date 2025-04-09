@@ -39,7 +39,7 @@ $arrModal = $modelC->obtenerModal();
           
           <div class="col-lg-3 align-items-center">
                 <div>
-                    <h4 style="color:var(--color6);font-weight:bold;">Company Address</h4>
+                    <h4 style="color:var(--color6);font-weight:bold;">Información Corporativa</h4>
                 </div>
                 <div>
                     <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:sales@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank"> Consulta General: sales@sapiensconsultingperu.com</a></p>
@@ -48,6 +48,7 @@ $arrModal = $modelC->obtenerModal();
                     <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:jobs@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank">Consulta de Carrera: jobs@sapiensconsultingperu.com</a></p>
                 </div>
                 <!-- <div><p style="color:var(--color6);font-weight:none;" class="m-0"> Peru Office: Calle Michigan 230, Rinconada del Lago, La Molina 15026, Lima – Perú.</p></div> -->
+                 <br><br>
                 <div>
                     <p style="color:var(--color6);text-align:justify; font-weight:none;" class="m-0"> <a href="/policy" style="text-decoration:underline;font-weight:bold;color:var(--color4);" target="_blank"> Políticas de Privacidad </a></p>
                 </div>
@@ -101,7 +102,7 @@ $arrModal = $modelC->obtenerModal();
       </div>
       
       <div class="row d-flex justify-content-start py-1">
-          <div class="col-lg-12 "><span style="color:var(--color6);text-align:center;display:block;">Copyright © Sapiens Consulting all rights reserved.</span></div>
+          <div class="col-lg-12 "><span style="color:var(--color6);text-align:center;display:block;">© Sapiens Consulting | Todos los derechos reservados.</span></div>
       </div>
     
   </div>

@@ -546,7 +546,7 @@
         .title-pe {
 
             color: var(--color5);
-            font-size: 18px;
+            font-size: 19px;
             font-weight: none;
 
         }
@@ -1709,34 +1709,21 @@
             </div>
         </div>
         <br>
-
         <div class="container">
             <div class="row d-flex justify-content-between">
                 <div class="container">
                     <div class="row d-flex justify-content-between">
                         <div class="col-12 col-lg-4 py-1 px-1">
-
                             <div class="accordion accordion-flush" id="accordionFlushExample1">
                                 <div class="accordion-item">
-
                                     <h2 class="accordion-header" id="flush1">
-
-                                        <button class="accordion-button collapsed shadow-lg " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog1.jpg');border: 2px solid var(--color4);border-radius:5px;background: size 10px;" type="button" data-bs-toggle="collapse" data-bs-target="#item1" aria-expanded="false" aria-controls="item1">
-
+                                        <button class="accordion-button collapsed shadow-lg " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog1.jpg');border: 2px solid var(--color4);border-radius:5px;background-size: 100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item1" aria-expanded="false" aria-controls="item1">
                                             <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-laptop-code"></i>&nbsp;Standards</div>
-
                                             <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
-
                                         </button>
-
                                     </h2>
-
                                     <div id="item1" class="accordion-collapse collapse" aria-labelledby="flush1" data-bs-parent="#accordionFlushExample">
-
                                         <div class="accordion-body">
-
-
-
                                             <div class="d-flex flex-row">
 
                                                 <span class="me-3"><i class="fas fa-circle" aria-hidden="true"></i></span>
@@ -1857,30 +1844,10 @@
                                                 </span>
 
                                             </div>
-
-
-
-
-
-
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
-
-
                             </div>
-
-
-
-
-
-
-
-
                         </div>
                         <div class="col-12 col-lg-4 py-1  px-1">
                             <div class="accordion-item ">
@@ -1917,7 +1884,6 @@
                                             </span>
 
                                         </div>
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -1933,7 +1899,6 @@
                                             </span>
 
                                         </div>
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -2084,10 +2049,201 @@
                                             </span>
 
                                         </div>
+                                        <div class="d-flex flex-row">
 
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
 
+                                            <span>
 
+                                                <p>
 
+                                                    Power Shell
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Batch
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    ASP Clásico (Nativo)
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    ASP.NET
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    SQL
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    jQuery
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Aplicaciones PWA (Progressive Web Apps)
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Blazor
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Angular JS
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    React
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Django
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Telerik
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Laravel
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
                                     </div>
 
                                 </div>
@@ -2102,7 +2258,7 @@
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog3.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item3" aria-expanded="false" aria-controls="item3">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-cloud"></i>&nbsp;Cloud | CMS | CRM | ERP</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-cloud"></i>&nbsp;Cloud | CMS </div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -2114,22 +2270,6 @@
 
                                     <div class="accordion-body">
 
-
-                                        <div class="d-flex flex-row">
-
-                                            <span class="me-3"><i class="fas fa-circle"></i></span>
-
-                                            <span>
-
-                                                <p>
-
-                                                    AWS (Amazon Web Services)
-
-                                                </p>
-
-                                            </span>
-
-                                        </div>
 
                                         <div class="d-flex flex-row">
 
@@ -2169,7 +2309,7 @@
 
                                                 <p>
 
-                                                    Infor / Mongoose
+                                                    Infor/Mongoose
 
                                                 </p>
 
@@ -2236,12 +2376,51 @@
                                             </span>
 
                                         </div>
+                                        <div class="d-flex flex-row">
 
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
 
+                                            <span>
 
+                                                <p>
 
+                                                    OpenShift
 
+                                                </p>
 
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Oracle Cloud
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Google Cloud AI
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
                                     </div>
 
                                 </div>
@@ -2345,6 +2524,31 @@
                                             </span>
 
                                         </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Redis
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    MariaDB
+                                                </p>
+
+                                            </span>
+
+                                        </div>
 
 
 
@@ -2391,8 +2595,6 @@
                                             </span>
 
                                         </div>
-
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -2408,7 +2610,6 @@
                                             </span>
 
                                         </div>
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -2424,7 +2625,6 @@
                                             </span>
 
                                         </div>
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -2478,19 +2678,13 @@
 
                                                 <p>
 
-                                                    Saas
+                                                    SaaS
 
                                                 </p>
 
                                             </span>
 
                                         </div>
-
-
-
-
-
-
                                     </div>
 
                                 </div>
@@ -2516,10 +2710,6 @@
                                 <div id="item6" class="accordion-collapse collapse" aria-labelledby="flush6" data-bs-parent="#accordionFlushExample">
 
                                     <div class="accordion-body">
-
-
-
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -2535,7 +2725,6 @@
                                             </span>
 
                                         </div>
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -2626,11 +2815,81 @@
                                             </span>
 
                                         </div>
+                                        <div class="d-flex flex-row">
 
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
 
+                                            <span>
 
+                                                <p>
 
+                                                    Swift
 
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Kotlin
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    MAUI
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Iconic Framework
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Kendo UI
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
 
                                     </div>
 
@@ -2647,7 +2906,7 @@
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog7.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item7" aria-expanded="false" aria-controls="item7">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-microsoft"></i>&nbsp;Microsoft</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-microsoft"></i>&nbsp;Microsoft DevOps & Architecture</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -2725,14 +2984,111 @@
                                             </span>
 
                                         </div>
+                                        <div class="d-flex flex-row">
 
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
 
+                                            <span>
 
+                                                <p>
 
+                                                    Clean Architecture
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Azure DevOps
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Microsoft Fabric
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Containers
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Docker
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+                                                    Git
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Kubernetes
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
                                     </div>
-
                                 </div>
-
                             </div>
 
                         </div>
@@ -2754,51 +3110,73 @@
                                 <div id="item8" class="accordion-collapse collapse" aria-labelledby="flush5" data-bs-parent="#accordionFlushExample">
 
                                     <div class="accordion-body">
-
-
-
-
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    TensorFlow
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    PyTorch
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    AWS AI
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    Redux
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    MATLAB
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+                                                    Reporting Services
+                                                </p>
+                                            </span>
+                                        </div>
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     BI / Analytics
-
                                                 </p>
-
                                             </span>
-
                                         </div>
-
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     Telerik Report
-
                                                 </p>
-
                                             </span>
-
                                         </div>
-
-
-
-
-
-
                                     </div>
-
                                 </div>
-
                             </div>
 
                         </div>
@@ -2808,9 +3186,8 @@
                                 <h2 class="accordion-header" id="flush9">
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog9.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item9" aria-expanded="false" aria-controls="item9">
-
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-node-js"></i>&nbsp;Libraries Frameworks</div>
-
+                                        <div><img src="./assets/img/icons/libraries.png" alt="" style="width:25px; height:25px;"></div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;Libraries & Frameworks</div>
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
                                     </button>
@@ -2839,7 +3216,6 @@
                                             </span>
 
                                         </div>
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -2855,7 +3231,6 @@
                                             </span>
 
                                         </div>
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -2886,7 +3261,6 @@
                                             </span>
 
                                         </div>
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -2902,7 +3276,6 @@
                                             </span>
 
                                         </div>
-
                                         <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -2918,9 +3291,7 @@
                                             </span>
 
                                         </div>
-
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
 
                                             <span>
@@ -2935,6 +3306,42 @@
 
                                         </div>
                                         <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Angular (TypeScript)
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 py-1  px-1">
+                            <div class="accordion-item ">
+
+                                <h2 class="accordion-header" id="flush10">
+
+                                    <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog10.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item10" aria-expanded="false" aria-controls="item10">
+                                        <div><img src="./assets/img/icons/crm.png" alt="" style="width:25px; height:25px;"></div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;CRM / ERP</div>
+
+                                        <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
+
+                                    </button>
+
+                                </h2>
+
+                                <div id="item10" class="accordion-collapse collapse" aria-labelledby="flush10" data-bs-parent="#accordionFlushExample">
+
+                                    <div class="accordion-body">
+                                        <div class="d-flex flex-row">
 
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
 
@@ -2942,30 +3349,365 @@
 
                                                 <p>
 
-                                                    Angular TypeScript
+                                                    SAP
 
                                                 </p>
 
                                             </span>
 
                                         </div>
+                                        <div class="d-flex flex-row">
 
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
 
+                                            <span>
 
+                                                <p>
+
+                                                    SAP (ABAP)
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    SAP Business One
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
                                     </div>
-
                                 </div>
-
                             </div>
+                        </div>
+                        <div class="col-12 col-lg-4 py-1  px-1">
+                            <div class="accordion-item ">
 
+                                <h2 class="accordion-header" id="flush11">
+
+                                    <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog11.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item11" aria-expanded="false" aria-controls="item11">
+                                        <div><img src="./assets/img/icons/cyber.png" alt="" style="width:25px; height:25px;"></div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;Cybersecurity</div>
+                                        <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
+                                    </button>
+                                </h2>
+                                <div id="item11" class="accordion-collapse collapse" aria-labelledby="flush11" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+
+                                                <p>
+
+                                                    Okta
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+
+                                                    Microsoft Azure Active Directory
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Fortinet
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Ping Identy
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    SonarQube
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Checkmarx
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Veracode
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Microsoft SDL
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    GitHub Advanced Security
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    AWS Security Hub
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 py-1  px-1">
+                            <div class="accordion-item ">
+                                <h2 class="accordion-header" id="flush12">
+                                    <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog12.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item12" aria-expanded="false" aria-controls="item12">
+                                        <div><img src="./assets/img/icons/ai.png" alt="" style="width:25px; height:25px;"></div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;AI</div>
+
+                                        <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
+                                    </button>
+                                </h2>
+                                <div id="item12" class="accordion-collapse collapse" aria-labelledby="flush12" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+                                            <span>
+                                                <p>
+
+                                                    NLP
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Machine Learning
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    OpenCV
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    YOLO (You Only Look Once)
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Scikit-learn
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    PyTorch
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Generative AI
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    Deep Learning
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    TensorFlow
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <span class="me-3"><i class="fas fa-circle"></i></span>
+
+                                            <span>
+
+                                                <p>
+
+                                                    OCR
+
+                                                </p>
+
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
 

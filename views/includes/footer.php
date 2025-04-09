@@ -38,22 +38,22 @@ $arrModal = $modelC->obtenerModal();
                     <h4 style="color:var(--color6);font-weight:bold;">Our Services</h4>
                 </div>
                 <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0"> Home</p>
+                    <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/" style="color:var(--color6);"> Home</a></p>
                 </div>
                 <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0"> About us</p>
+                    <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/#div-about" style="color:var(--color6);"> About us</a></p>
                 </div>
                 <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0"> Services</p>
+                    <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/#section-ourservices" style="color:var(--color6)"> Services</a></p>
                 </div>
                 <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0"> Partners</p>
+                    <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/#partners" style="color:var(--color6);"> Partners</a></p>
                 </div>
                 <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0"> Projects</p>
+                    <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/#div-industrias" style="color:var(--color6);"> Projects</a></p>
                 </div>
                 <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0"> Careers</p>
+                    <p style="color:var(--color6);font-weight:none;" class="m-0"> <a href="/#careers" style="color:var(--color6);">Careers</a></p>
                 </div>
 
 
@@ -61,15 +61,16 @@ $arrModal = $modelC->obtenerModal();
             </div>
             <div class="col-lg-3">
                 <div>
-                    <h4 style="color:var(--color6);font-weight:bold;">Company Address</h4>
+                    <h4 style="color:var(--color6);font-weight:bold;">Company Information</h4>
                 </div>
                 <div>
-                    <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:sales@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank"> General Inquiry: sales@sapiensconsultingperu.com</a></p>
+                    <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:sales@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank"> General Inquiry: <p>sales@sapiensconsultingperu.com</p></a></p>
                 </div>
                 <div>
-                    <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:jobs@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank"> Career Inquiry: jobs@sapiensconsultingperu.com</a></p>
+                    <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:jobs@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank"> Career Inquiry: <p>jobs@sapiensconsultingperu.com</p></a></p>
                 </div>
                 <!-- <div><p style="color:var(--color6);font-weight:none;" class="m-0"> Peru Office: Calle Michigan 230, Rinconada del Lago, La Molina 15026, Lima – Perú.</p></div> -->
+                 <br>
                 <div>
                     <p style="color:var(--color6);text-align:justify; font-weight:none;" class="m-0"> <a href="/policy" style="text-decoration:underline;font-weight:bold;color:var(--color4);" target="_blank"> Privacy Policy </a></p>
                 </div>
