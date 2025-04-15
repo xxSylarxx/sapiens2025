@@ -1,7 +1,7 @@
 <style>
     .flotante {
         position: fixed;
-        bottom: 38%;
+        bottom: 5%;
         right: 2%;
         z-index: 99;
     }

@@ -500,7 +500,7 @@ $arrModal = $modelC->obtenerModal();
             padding-top: 3rem;
             padding-bottom: 3rem;
             /*  background-color: var(--color1); */
-          /*   background-size: 133%; */
+            /*   background-size: 133%; */
             background-repeat: no-repeat;
             text-align: center;
             padding-right: 5rem;
@@ -714,6 +714,11 @@ $arrModal = $modelC->obtenerModal();
         #titulo-services {
             font-weight: bold;
             color: white;
+        }
+
+        .owl-item {
+            display: flex !important;
+            justify-content: center !important;
         }
 
         /* Primer mediaquery */
@@ -992,10 +997,11 @@ $arrModal = $modelC->obtenerModal();
         }
 
         @media only screen and (min-width:1097px) and (max-width:1280px) {
-            #section-ourservices {
+
+            /*  #section-ourservices {
                 margin-top: -50rem;
             }
-
+ */
             #valores2 {
                 top: 8%;
                 left: 60px;
@@ -1351,13 +1357,13 @@ $arrModal = $modelC->obtenerModal();
                     </div>
                 </div>
                 <div class="container__cards owl-carousel owl-theme" id="servicios">
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p1.png" alt="" />
                                 <div class="img__back"></div>
                             </div>
-                            <div class="description h-100">
+                            <div class="description">
                                 <h4 style="color:black;">Outsourcing de Personal de TI</h4>
                                 <p>
                                     Desarrolladores individuales y equipos de desarrollo dedicados a pedido para expandir
@@ -1369,8 +1375,8 @@ $arrModal = $modelC->obtenerModal();
                         </div>
                     </div>
 
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p4.png" alt="" />
                                 <div class="img__back"></div>
@@ -1387,8 +1393,8 @@ $arrModal = $modelC->obtenerModal();
                         </div>
                     </div>
 
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p3.png" alt="" />
                                 <div class="img__back"></div>
@@ -1405,8 +1411,8 @@ $arrModal = $modelC->obtenerModal();
                     </div>
 
 
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p2.png" alt="" />
                                 <div class="img__back"></div>
@@ -1422,8 +1428,8 @@ $arrModal = $modelC->obtenerModal();
                             </div>
                         </div>
                     </div>
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p5.png" alt="" />
                                 <div class="img__back"></div>
@@ -1436,8 +1442,8 @@ $arrModal = $modelC->obtenerModal();
                         </div>
                     </div>
 
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p6.png" alt="" />
                                 <div class="img__back"></div>
@@ -4018,6 +4024,11 @@ $arrModal = $modelC->obtenerModal();
                 1000: {
                     items: 4
                 }
+            },
+             // Opción clave para igualar alturas:
+             onInitialized: function() {
+                $('.owl-stage').css('display', 'flex');
+                $('.owl-item').css('display', 'flex');
             },
             navText: ["&#10094;", "&#10095;"] // Flechas personalizadas (← y →)
         });

@@ -18,6 +18,7 @@ $arrModal = $modelC->obtenerModal();
 </style>
 <footer class="container-fluid p-0 pt-4">
     <div class="container">
+        
         <div class="row d-flex justify-content-center ">
             <div class="col-lg-3 ">
                 <div><a href="#"><img src="./assets/img/icons/escudo3.png" class="img-fluid" alt="" width="50%" style="filter: drop-shadow(0 0 5px rgb(246, 252, 251));"></a></div>
@@ -32,8 +33,7 @@ $arrModal = $modelC->obtenerModal();
                   <div class="col-lg-2"><i class="fab fa-facebook-f"></i></div>
               </div>-->
             </div>
-
-            <div class="col-lg-2 px-2 align-items-center">
+            <div class="col-lg-2 px-2 align-items-center pt-3">
                 <div>
                     <h4 style="color:var(--color6);font-weight:bold;">Our Services</h4>
                 </div>
@@ -59,7 +59,7 @@ $arrModal = $modelC->obtenerModal();
 
 
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 pt-3">
                 <div>
                     <h4 style="color:var(--color6);font-weight:bold;">Company Information</h4>
                 </div>
@@ -70,28 +70,15 @@ $arrModal = $modelC->obtenerModal();
                     <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:jobs@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank"> Career Inquiry: <p>jobs@sapiensconsultingperu.com</p></a></p>
                 </div>
                 <!-- <div><p style="color:var(--color6);font-weight:none;" class="m-0"> Peru Office: Calle Michigan 230, Rinconada del Lago, La Molina 15026, Lima – Perú.</p></div> -->
-                 <br>
+                <br>
                 <div>
                     <p style="color:var(--color6);text-align:justify; font-weight:none;" class="m-0"> <a href="/policy" style="text-decoration:underline;font-weight:bold;color:var(--color4);" target="_blank"> Privacy Policy </a></p>
                 </div>
-                <div class="row d-flex">
-                    <div class="col-lg-5 pt-5">
-                            <div class="d-flex justify-content-start py-1" style="color:white;font-family: 'Raleway', sans-serif;"><i class="fas fa-map-marker-alt" style="color:white;font-size:1rem;"></i>&nbsp;&nbsp;<p class="text-start" style="margin-top: -5px; margin-bottom:0px;">&nbsp;&nbsp;Lima, Perú</p>
-                            </div>
-                    </div>
-                    <div class="col-lg-5 pt-5">
-                        <a href="https://www.linkedin.com/company/perusapiens-consulting/" target="_blank">
-                            <div class="d-flex justify-content-start py-1" style="color:white;font-family: 'Raleway', sans-serif;">
-                            <i class="fab fa-linkedin" style="color:white;font-size:1rem;"></i>&nbsp;&nbsp;<p class="text-start" style="margin-top: -5px; margin-bottom:0px;">&nbsp;&nbsp;LinkedIn</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+
 
                 <br>
             </div>
-
-            <div class="col-lg-3 ">
+            <div class="col-lg-3 pt-3">
                 <div>
                     <h4 style="color:var(--color6);font-weight:bold;">Popular Posts</h4>
                     <br>
@@ -114,9 +101,27 @@ $arrModal = $modelC->obtenerModal();
                 <br>
             </div>
             <br>
-            <hr class="p-0 m-0">
         </div>
-        <div class="row d-flex justify-content-start py-1">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-2 pt-1">
+                <div class="d-flex justify-content-center py-1" style="color:white;font-family: 'Raleway', sans-serif;"><i class="fas fa-map-marker-alt" style="color:white;font-size:1rem;"></i>&nbsp;&nbsp;<p class="text-start" style="margin-top: -5px; margin-bottom:0px;">&nbsp;&nbsp;Lima, Perú</p>
+                </div>
+            </div>
+            <div class="col-lg-2 pt-1">
+                <a href="https://www.linkedin.com/company/perusapiens-consulting/" target="_blank">
+                    <div class="d-flex justify-content-center py-1" style="color:white;font-family: 'Raleway', sans-serif;">
+                        <i class="fab fa-linkedin" style="color:white;font-size:1rem;"></i>&nbsp;&nbsp;<p class="text-start" style="margin-top: -5px; margin-bottom:0px;">&nbsp;&nbsp;LinkedIn</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <hr class="p-0 m-0">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center py-2">
             <div class="col-lg-12 "><span style="color:var(--color6);text-align:center;display:block;">Copyright © Sapiens Consulting all rights reserved.</span></div>
         </div>
     </div>

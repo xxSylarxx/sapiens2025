@@ -1,7 +1,7 @@
 <style>
     .floating {
         position: fixed;
-        bottom: 36%;
+        bottom: 5%;
         right: 2%;
         z-index: 99;
     }

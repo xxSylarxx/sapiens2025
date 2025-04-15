@@ -142,11 +142,11 @@ switch ($pagina) {
                 <!-- <li class="nav-item fw-bold" style=" border-radius:5px;background-color: var(--color1);">
                     <a class="nav-link <--?= $active6 ?>" style="color:white;" href="index.php#div-contact"><--?php echo $lang === 'ES' ? 'CONTÁCTANOS' : 'CONTACT US'; ?></a>
                 </li> -->
-                <li class="nav-item dropdown ">
+                <!-- <li class="nav-item dropdown ">
                     <div id="cespanol">
-                        <a type="button" onclick="cambiarIdioma('EN')"><img src="<?php echo WEBURL ?>/assets/img/icons/en2.png" alt=""></a>
+                        <a type="button" onclick="cambiarIdioma('EN')"><img src="<//?php echo WEBURL ?>/assets/img/icons/en2.png" alt=""></a>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
         </li>

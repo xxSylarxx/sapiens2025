@@ -717,6 +717,11 @@ $arrModal = $modelC->obtenerModal();
             color: white;
         }
 
+        .owl-item {
+            display: flex !important;
+            justify-content: center !important;
+        }
+
         /* Primer mediaquery */
 
         @media only screen and (min-width:210px) and (max-width:409px) {
@@ -843,6 +848,7 @@ $arrModal = $modelC->obtenerModal();
         #cards-2025 {
             position: relative;
         }
+
 
         @media only screen and (min-width:350px) and (max-width:600px) {
             #careers {
@@ -992,10 +998,11 @@ $arrModal = $modelC->obtenerModal();
 
         }
 
+
         @media only screen and (min-width:1097px) and (max-width:1280px) {
-            #section-ourservices {
+            /*  #section-ourservices {
                 margin-top: -50rem;
-            }
+            } */
 
             #valores2 {
                 top: 8%;
@@ -1286,15 +1293,8 @@ $arrModal = $modelC->obtenerModal();
                             <p>We can help you with mobile development, software testing, user experience, cloud, big data and software architecture.</p>
                         </div>
                     </li>
-
-
-
-
-
                 </ul>
-
             </div>
-
         </center>
     </section>
 
@@ -1331,12 +1331,9 @@ $arrModal = $modelC->obtenerModal();
 
     <!-- Seccion de otros servicios -->
     <div id="cards-2025">
-
-
         <div id="particles-js">
         </div>
         <section id="section-ourservices" class="container-fluid py-5">
-
             <div>
                 <div class="container " style="text-align:center;">
                     <div class="row justify-content-center">
@@ -1349,13 +1346,13 @@ $arrModal = $modelC->obtenerModal();
                     </div>
                 </div>
                 <div class="container__cards owl-carousel owl-theme" id="servicios">
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p1.png" alt="" />
                                 <div class="img__back"></div>
                             </div>
-                            <div class="description h-100">
+                            <div class="description">
                                 <h4 style="color:black;">IT Staff Augmentation</h4>
                                 <p>
                                     Individual developers and dedicated development teams on demand
@@ -1367,9 +1364,8 @@ $arrModal = $modelC->obtenerModal();
                             </div>
                         </div>
                     </div>
-
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p4.png" alt="" />
                                 <div class="img__back"></div>
@@ -1383,12 +1379,10 @@ $arrModal = $modelC->obtenerModal();
                                 <br>
                                 <br>
                             </div>
-
                         </div>
                     </div>
-
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1 ">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p3.png" alt="" />
                                 <div class="img__back"></div>
@@ -1403,10 +1397,8 @@ $arrModal = $modelC->obtenerModal();
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p2.png" alt="" />
                                 <div class="img__back"></div>
@@ -1425,34 +1417,32 @@ $arrModal = $modelC->obtenerModal();
                             </div>
                         </div>
                     </div>
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p5.png" alt="" />
                                 <div class="img__back"></div>
                             </div>
                             <div class="description">
                                 <h4 style="color:black;">Cybersecurity</h4>
-                                <p style="font-size:.9rem;" class="pb-4">Comprehensive cybersecurity solutions to safeguard your business in the constantly changing digital landscape. Our services include threat detection, risk management, data encryption, and compliance, ensuring your systems and information remain secure.
+                                <p>Comprehensive cybersecurity solutions to safeguard your business in the constantly changing digital landscape. Our services include threat detection, risk management, data encryption, and compliance, ensuring your systems and information remain secure.
                                 </p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="row slider-servicios" style=" display: flex;justify-content: center;">
-                        <div class="card_style1 h-100">
+                    <div class="slider-servicios" style=" display: flex;justify-content: center;">
+                        <div class="card_style1">
                             <div class="cover">
                                 <img src="./assets/img/inicio/p6.png" alt="" />
                                 <div class="img__back"></div>
                             </div>
                             <div class="description">
                                 <h4 style="color:black;">Artificial Intelligence (AI)</h4>
-                                <p class="pb-2" style="font-size:.96rem;">AI solutions that will transform your business. We can help you take advantage of AI to increase efficiency, innovation, and growth through predictive analytics, machine learning models, automation, and natural language processing.
+                                <p>AI solutions that will transform your business. We can help you take advantage of AI to increase efficiency, innovation, and growth through predictive analytics, machine learning models, automation, and natural language processing.
                                 </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -4027,6 +4017,11 @@ $arrModal = $modelC->obtenerModal();
                 1000: {
                     items: 4
                 }
+            },
+            // Opción clave para igualar alturas:
+            onInitialized: function() {
+                $('.owl-stage').css('display', 'flex');
+                $('.owl-item').css('display', 'flex');
             },
             navText: ["&#10094;", "&#10095;"] // Flechas personalizadas (← y →)
         });
