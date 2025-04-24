@@ -9,13 +9,29 @@ $arrModal = $modelC->obtenerModal();
 //var_dump($arrModal);
 //exit;
 ?>
+<style>
+    footer a {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-all;
+    }
+
+    footer p {
+        font-size: 0.9rem !important;
+    }
+
+    footer .container span {
+        display: block;
+        font-size: .9rem !important;
+    }
+</style>
 <footer class="container-fluid p-0 pt-4">
     <div class="container">
         <div class="row d-flex justify-content-center ">
             <div class="col-lg-3 ">
                 <div><a href="#"><img src="<?php echo WEBURL ?>/assets/img/icons/escudo3.png" class="img-fluid" alt="" width="50%" style="filter: drop-shadow(0 0 5px rgb(246, 252, 251));"></a></div>
-                <br>
-                <div>
+
+                <div class="pt-3">
                     <p style="color:var(--color6);text-align:start; font-weight:none;">Sapiens Consulting es una firma de consultoría líder con cuatro líneas de negocio: Ampliacion de Personal de TI, Desarrollo de Aplicaciones a Medida, Desarrollo de Aplicaciones Móviles, Gestión y Soporte de Aplicaciones, Ciberseguridad e Inteligencia Artificial.
                     </p>
                 </div>
@@ -29,27 +45,29 @@ $arrModal = $modelC->obtenerModal();
 
             </div>
 
-            <div class="col-lg-3 align-items-center pt-3">
+            <div class="col-lg align-items-center pt-3" style="margin-left: 2rem;">
                 <div>
                     <h4 style="color:var(--color6);font-weight:bold;">Nuestros Servicios</h4>
                 </div>
-                <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0">Inicio</p>
-                </div>
-                <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0">Nosotros</p>
-                </div>
-                <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0">Servicios</p>
-                </div>
-                <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0">Partners</p>
-                </div>
-                <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0">Proyectos</p>
-                </div>
-                <div>
-                    <p style="color:var(--color6);font-weight:none;" class="m-0">Carreras</p>
+                <div class="pt-3">
+                    <div>
+                        <p style="color:var(--color6);font-weight:none;" class="m-0">Inicio</p>
+                    </div>
+                    <div>
+                        <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/#div-about" style="color:var(--color6);">Nosotros</a></p>
+                    </div>
+                    <div>
+                        <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/#section-ourservices" style="color:var(--color6);">Servicios</a></p>
+                    </div>
+                    <div>
+                        <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/#partners" style="color:var(--color6);">Partners</a></p>
+                    </div>
+                    <div>
+                        <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/#div-industrias" style="color:var(--color6);">Proyectos</a></p>
+                    </div>
+                    <div>
+                        <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/#careers" style="color:var(--color6);">Carreras</a></p>
+                    </div>
                 </div>
             </div>
 
@@ -57,22 +75,19 @@ $arrModal = $modelC->obtenerModal();
                 <div>
                     <h4 style="color:var(--color6);font-weight:bold;">Información Corporativa</h4>
                 </div>
-                <div>
-                    <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:sales@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank"> Consulta General: sales@sapiensconsultingperu.com</a></p>
+                <div class="pt-3">
+                    <div>
+                        <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:sales@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank"> Consulta General: sales@sapiensconsultingperu.com</a></p>
+                    </div>
+                    <div>
+                        <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:jobs@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank">Consulta de Carrera: jobs@sapiensconsultingperu.com</a></p>
+                    </div>
+                    <!-- <div><p style="color:var(--color6);font-weight:none;" class="m-0"> Peru Office: Calle Michigan 230, Rinconada del Lago, La Molina 15026, Lima – Perú.</p></div> -->
+                    <br>
+                    <div>
+                        <p style="color:var(--color6);text-align:justify; font-weight:none;" class="m-0"> <a href="/policy" style="text-decoration:underline;font-weight:bold;color:var(--color4);" target="_blank"> Políticas de Privacidad </a></p>
+                    </div>
                 </div>
-                <div>
-                    <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:jobs@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank">Consulta de Carrera: jobs@sapiensconsultingperu.com</a></p>
-                </div>
-                <!-- <div><p style="color:var(--color6);font-weight:none;" class="m-0"> Peru Office: Calle Michigan 230, Rinconada del Lago, La Molina 15026, Lima – Perú.</p></div> -->
-                <br><br>
-                <div>
-                    <p style="color:var(--color6);text-align:justify; font-weight:none;" class="m-0"> <a href="/policy" style="text-decoration:underline;font-weight:bold;color:var(--color4);" target="_blank"> Políticas de Privacidad </a></p>
-                </div>
-
-
-                <br>
-
-
             </div>
             <div class="col-lg-3 pt-3">
                 <div>

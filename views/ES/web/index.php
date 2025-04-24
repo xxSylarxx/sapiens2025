@@ -462,7 +462,7 @@ $arrModal = $modelC->obtenerModal();
 
         .title-pe {
             color: var(--color5);
-            font-size: 19px;
+            font-size: 20px;
             font-weight: none;
         }
 
@@ -694,7 +694,9 @@ $arrModal = $modelC->obtenerModal();
         }
 
         #programing {
-            padding-top: 2rem;
+            position: relative;
+            margin-top: -6rem;
+            z-index: 2;
         }
 
 
@@ -719,6 +721,11 @@ $arrModal = $modelC->obtenerModal();
         .owl-item {
             display: flex !important;
             justify-content: center !important;
+        }
+
+        .img-peru img {
+            width: 100%;
+            opacity: 0.1;
         }
 
         /* Primer mediaquery */
@@ -848,7 +855,31 @@ $arrModal = $modelC->obtenerModal();
             position: relative;
         }
 
-        @media only screen and (min-width:350px) and (max-width:600px) {
+        .giro-mundo {
+            width: 80%;
+        }
+
+        @media only screen and (min-width:350px) and (max-width:990px) {
+            .btn-carousel2 span {
+                display: none;
+            }
+
+            .btn-carousel1 span {
+                display: none;
+            }
+
+            .img-peru {
+                position: relative;
+            }
+
+            .img-peru img {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -30%);
+            }
+
             #careers {
                 background: none;
                 background-color: #E5ECF2;
@@ -857,7 +888,7 @@ $arrModal = $modelC->obtenerModal();
             }
 
             #careers .img-work {
-                width: 50%;
+                width: 30%;
             }
 
             #cards-2025 {
@@ -901,7 +932,7 @@ $arrModal = $modelC->obtenerModal();
 
         @media only screen and (min-width:601px) and (max-width:919px) {
             #div-about #about {
-                padding-top: 42rem;
+                padding-top: 30rem;
             }
 
             #particles-js {
@@ -923,6 +954,12 @@ $arrModal = $modelC->obtenerModal();
 
             .button2 a {
                 font-size: 1rem;
+            }
+        }
+
+        @media only screen and (min-width:919px) and (max-width:992px) {
+            .giro-mundo {
+                display: none;
             }
         }
 
@@ -1097,9 +1134,9 @@ $arrModal = $modelC->obtenerModal();
                 top: 40%
             }
 
-            #programing {
+            /* #programing {
                 padding-top: 4rem;
-            }
+            } */
 
             #servicios {
                 padding-top: .2rem;
@@ -1309,16 +1346,15 @@ $arrModal = $modelC->obtenerModal();
     <!-- seccion sobre nosotros -->
 
     <section id="div-about">
-        <div class="container" style="position:relative;">
+        <div class="container">
             <div class="row d-flex justify-content-around">
-                <div class="col-lg-6" style="position:relative;">
-
-                    <img id="img-mundo" src="./assets/img/inicio/mundo.png" style="position:absolute; z-index:1;" alt="" width="100%">
-                    <img id="img-mundo2" src="./assets/img/inicio/about1_1.png" style="position:absolute; z-index:2;" alt="" width="100%">
-                    <img id="img-mundo3" src="./assets/img/inicio/about1_2.png" style="position:absolute; z-index:3;" alt="" width="100%">
-
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="giro-mundo" style="position:relative;">
+                        <img id="img-mundo" src="./assets/img/inicio/mundo.png" style="position:absolute; z-index:1;" alt="" width="100%">
+                        <img id="img-mundo2" src="./assets/img/inicio/about1_1.png" style="position:absolute; z-index:2;" alt="" width="100%">
+                        <img id="img-mundo3" src="./assets/img/inicio/about1_2.png" style="position:absolute; z-index:3;" alt="" width="100%">
+                    </div>
                 </div>
-
                 <div id="about" class="col-lg-5 my-auto ">
                     <h3 style="color:var(--color7);font-weight:bold;">Nosotros</h3>
                     <div class="bar-main">
@@ -1600,100 +1636,100 @@ $arrModal = $modelC->obtenerModal();
         <br>
         <br>
         <br>
+        <style>
+            .item {
+                height: 700px;
+            }
+
+            .owl-nav {
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                top: 30%;
+                width: 100%;
+                transform: translateY(-50%);
+                pointer-events: none;
+                /* Evita que bloqueen la interacción con las imágenes */
+            }
+
+            /* Estilizar los botones */
+            .owl-prev,
+            .owl-next {
+                background: var(--color1) !important;
+                color: white !important;
+                border-radius: 10px !important;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                cursor: pointer;
+                pointer-events: all;
+                /* Permite la interacción con los botones */
+                transition: background 0.3s;
+            }
+
+            .owl-prev:hover,
+            .owl-next:hover {
+                background: var(--color3) !important;
+            }
+
+            /* Posicionar los botones */
+            .owl-prev {
+                position: absolute;
+                left: -80px;
+            }
+
+            .owl-next {
+                position: absolute;
+                right: -80px;
+            }
+
+            @media screen and (max-width: 900px) {
+                .item {
+                    height: 800px;
+                }
+
+                .owl-nav {
+                    display: none;
+                }
+            }
+        </style>
         <div id="industrias">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner " style="height:500px;">
-                    <div class="carousel-item active">
-                        <div class="container">
-                            <div class="row d-flex justify-content-center">
-                                <?php
-                                for ($i = 0; $i <= 2; $i++) :
-                                    $value = $arrNoticias[$i]; ?>
-                                    <div class="col-12 col-lg-4 p-0 ">
-                                        <a href="entrada/<?php echo $value['tagname'] ?>" class="card crop  " style="height:60%;" target="_blank">
-                                            <span class="news"><?php echo $value['catdes'] ?></span>
-                                            <img src="<?php echo $value['portada'] ?>" width="100%" height="460">
-                                            <div class="card-body">
-                                                <p>Sapiens | </p>
-                                                <h5><?php echo $value['titulo'] ?></h5>
-                                                <p style="font-size:15px;">
-                                                    <?php echo $value['detalle'] ?>
-                                                </p>
-                                            </div>
-                                            <div class="card-footer" style="background-color:transparent;">
-                                                <h6>Read More&nbsp;<i class="fas fa-angle-right my-auto"></i></h6>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                <?php endfor ?>
-
-
-                            </div>
-
+            <div class="margin-infra container">
+                <div class="sedes_content_slider owl-carousel owl-theme">
+                    <?php
+                    foreach ($arrNoticias as $value) : ?>
+                        <div class="item">
+                            <a href="entrada/<?php echo $value['tagname'] ?>" class="card crop  " style="height:60%;" target="_blank">
+                                <span class="news"><?php echo $value['catdes'] ?></span>
+                                <img src="<?php echo $value['portada'] ?>" width="100%" height="460">
+                                <div class="card-body">
+                                    <p>Sapiens | </p>
+                                    <h5><?php echo $value['titulo'] ?></h5>
+                                    <p style="font-size:15px;">
+                                        <?php echo $value['detalle'] ?>
+                                    </p>
+                                </div>
+                                <div class="card-footer" style="background-color:transparent;">
+                                    <h6>Read More&nbsp;<i class="fas fa-angle-right my-auto"></i></h6>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                            <div class="row d-flex justify-content-center">
-                                <?php
-                                if (count($arrNoticias) > 3) {
-                                    for ($i = 3; $i <= 4; $i++) :
-                                        $value = $arrNoticias[$i]; ?>
-                                        <div class="col-12 col-lg-4 p-0 ">
-                                            <a href="/entrada/<?php echo $value['tagname'] ?>" class="card crop  " style="height:60%;" target="_blank">
-                                                <span class="news"><?php echo $value['catdes'] ?></span>
-                                                <img src="<?php echo $value['portada'] ?>" width="100%" height="460">
-                                                <div class="card-body">
-                                                    <p>Sapiens | </p>
-                                                    <h5><?php echo $value['titulo'] ?></h5>
-                                                    <p style="font-size:15px;">
-                                                        <?php echo $value['detalle'] ?>
-                                                    </p>
-                                                </div>
-                                                <div class="card-footer" style="background-color:transparent;">
-                                                    <h6>Read More&nbsp;<i class="fas fa-angle-right my-auto"></i></h6>
-                                                </div>
-                                            </a>
-
-                                        </div>
-                                <?php endfor;
-                                }
-
-                                ?>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
+                    <?php endforeach ?>
                 </div>
-                <button class="btn-carousel1 carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="btn-carousel2 carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-
-
-
-
         </div>
+
+
     </section>
-    <br>
-    <br>
 
     <!-- seccion de Programming & Technology Expertise -->
     <section id="programing">
-
         <div class="container " style="text-align:center;">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-
                     <h2 style="color:var(--color7);font-weight:bold;">Programming & Technology Expertise</h2>
                     <div class="bar-main" style="width:100%;">
                         <div class="bar bar-big"></div>
@@ -2765,133 +2801,72 @@ $arrModal = $modelC->obtenerModal();
 
                                         </div>
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     jQuery Mobile
-
                                                 </p>
-
                                             </span>
-
                                         </div>
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     Xamarin
-
                                                 </p>
-
                                             </span>
-
                                         </div>
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     Flutter
-
                                                 </p>
-
                                             </span>
-
                                         </div>
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     Swift
-
                                                 </p>
-
                                             </span>
-
                                         </div>
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     Kotlin
-
                                                 </p>
-
                                             </span>
-
                                         </div>
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     MAUI
-
                                                 </p>
-
                                             </span>
-
                                         </div>
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     Iconic Framework
-
                                                 </p>
-
                                             </span>
-
                                         </div>
                                         <div class="d-flex flex-row">
-
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     Kendo UI
-
                                                 </p>
-
                                             </span>
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
-
                         </div>
                         <div class="col-12 col-lg-4 py-1  px-1">
                             <div class="accordion-item ">
@@ -3483,31 +3458,19 @@ $arrModal = $modelC->obtenerModal();
                                         </div>
                                         <div class="d-flex flex-row">
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     Veracode
-
                                                 </p>
-
                                             </span>
-
                                         </div>
                                         <div class="d-flex flex-row">
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
-
                                             <span>
-
                                                 <p>
-
                                                     Microsoft SDL
-
                                                 </p>
-
                                             </span>
-
                                         </div>
                                         <div class="d-flex flex-row">
                                             <span class="me-3"><i class="fas fa-circle"></i></span>
@@ -3704,13 +3667,8 @@ $arrModal = $modelC->obtenerModal();
                 </div>
             </div>
         </div>
-
         </div>
-
     </section>
-
-
-
     <br><!--  -->
     <br><!--  -->
     <br><!--  -->
@@ -3785,8 +3743,8 @@ $arrModal = $modelC->obtenerModal();
                         <li>Gerentes de Proyectos</li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <img src="./assets/img/icons/peru.png" width="100%" alt="" style="opacity: 0.1;">
+                <div class="col-lg-4 img-peru">
+                    <img src="./assets/img/icons/peru.png" @>
                 </div>
                 <div class="col-lg-4">
                     <h4>¿Te apasionan los desafíos y la tecnología? </h4>
@@ -3806,11 +3764,11 @@ $arrModal = $modelC->obtenerModal();
                             <span style="font-size: 2rem;color:var(--color1);">Postula</span>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-around pt-2">
-                        <div class="col-lg-4">
+                    <div class="row d-flex justify-content-center pt-2">
+                        <div class="col-lg-3">
                             <img class="img-work" src="./assets/img/icons/ico1.png" alt="">
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <img class="img-work" src="./assets/img/icons/ico2.png" alt="">
                         </div>
                     </div>
@@ -3997,7 +3955,7 @@ $arrModal = $modelC->obtenerModal();
                 items: 1,
             },
             800: {
-                items: 2,
+                items: 1,
             },
             1000: {
                 items: 3,
@@ -4019,21 +3977,48 @@ $arrModal = $modelC->obtenerModal();
                     items: 1
                 },
                 600: {
+                    items: 1
+                },
+                700: {
                     items: 2
                 },
                 1000: {
                     items: 4
                 }
             },
-             // Opción clave para igualar alturas:
-             onInitialized: function() {
+            // Opción clave para igualar alturas:
+            onInitialized: function() {
                 $('.owl-stage').css('display', 'flex');
                 $('.owl-item').css('display', 'flex');
             },
             navText: ["&#10094;", "&#10095;"] // Flechas personalizadas (← y →)
         });
     });
+
+    $(document).ready(function() {
+        $(".sedes_content_slider").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            },
+            navText: ["&#10094;", "&#10095;"] // Flechas personalizadas (← y →)
+        });
+    });
 </script>
+
 
 
 

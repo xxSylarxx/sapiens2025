@@ -24,6 +24,9 @@
   font-family: "muli";
   src: url("../../assets/fonts/Muli-Regular.ttf");
 }
+*{
+  box-sizing: border-box;
+}
 
 body {
   color: #616161;
@@ -113,7 +116,6 @@ button > span {
 }
 /* animacion del mundo */
 #img-mundo {
-  
   animation-name: rotation;
   animation-duration: 12s;
   animation-iteration-count: infinite;

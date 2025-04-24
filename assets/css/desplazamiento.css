@@ -413,6 +413,8 @@
 @media screen and (max-width:881px) {
   .container3d li {
     perspective: 390px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .container3d {
     width: 300px;    
