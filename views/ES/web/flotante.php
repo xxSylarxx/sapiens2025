@@ -18,7 +18,7 @@
 
     .f1 {
         padding: 1rem;
-       /*  background-color: #B8CCEB; */
+        /*  background-color: #B8CCEB; */
         background-color: var(--color1);
         margin-top: 1rem;
         color: white !important;
@@ -50,8 +50,8 @@
         } */
 
         .flotante {
-position: absolute;
-right: 0;
+            position: absolute;
+            right: 0;
             bottom: 60%;
 
         }
