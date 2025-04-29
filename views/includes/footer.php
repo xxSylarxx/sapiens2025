@@ -31,7 +31,9 @@ $arrModal = $modelC->obtenerModal();
         .col-especial{
             margin-left:0rem;
         }
-        
+        footer .container span {
+        font-size: .8rem !important;
+    }
     }
 </style>
 <footer class="container-fluid p-0 pt-4">
