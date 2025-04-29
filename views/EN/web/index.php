@@ -500,7 +500,7 @@ $arrModal = $modelC->obtenerModal();
             padding-top: 3rem;
             padding-bottom: 3rem;
             /*  background-color: var(--color1); */
-            /*  background-size: 133%; */
+            background-size: 130%; 
             background-repeat: no-repeat;
             text-align: center;
             padding-right: 5rem;
@@ -1706,7 +1706,6 @@ $arrModal = $modelC->obtenerModal();
 
     <!-- seccion de Programming & Technology Expertise -->
     <section id="programing">
-
         <div class="container " style="text-align:center;">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
@@ -3721,17 +3720,11 @@ $arrModal = $modelC->obtenerModal();
                 </div>
             </div>
         </div>
-
-        </div>
-
     </section>
-
-
     <br><!--  -->
     <br><!--  -->
     <br><!--  -->
     <!-- Seccion de partners -->
-
     <section id="partners" class="container-fluid px-0">
         <div class="container">
             <div class="container " style="text-align:center;">
@@ -3949,10 +3942,12 @@ $arrModal = $modelC->obtenerModal();
     let modal = new bootstrap.Modal(document.getElementById('myModal'), );
     modal.show();
 </script>
-<script src="<?php echo WEBURL ?>/assets/js/popper.min.js"></script>
+<!-- <script src="<?php echo WEBURL ?>/assets/js/popper.min.js"></script>
+<script src="<?php echo WEBURL ?>/assets/js/bootstrap.pooper.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="<?php echo WEBURL ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php echo WEBURL ?>/assets/js/jquery.min.js"></script>
-<script src="<?php echo WEBURL ?>/assets/js/bootstrap.pooper.js"></script>
+
 
 <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 <script src="<?php echo WEBURL ?>/assets/js/hubslider.min.js"></script>

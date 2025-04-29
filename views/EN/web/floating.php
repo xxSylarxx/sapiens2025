@@ -53,7 +53,7 @@
            display: none;
         } */
         .floating {
-
+            right: 1%;
             bottom: 60%;
 
         }

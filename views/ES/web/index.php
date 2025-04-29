@@ -500,7 +500,7 @@ $arrModal = $modelC->obtenerModal();
             padding-top: 3rem;
             padding-bottom: 3rem;
             /*  background-color: var(--color1); */
-            /*   background-size: 133%; */
+            background-size: 130%;
             background-repeat: no-repeat;
             text-align: center;
             padding-right: 5rem;
@@ -1496,9 +1496,6 @@ $arrModal = $modelC->obtenerModal();
             </div>
         </section>
     </div>
-
-
-
 
 
     <!-- modales para la seccion de otros servicios -->

@@ -24,6 +24,15 @@ $arrModal = $modelC->obtenerModal();
         display: block;
         font-size: .9rem !important;
     }
+    .col-especial{
+        margin-left:2rem;
+    }
+    @media screen and (max-width: 768px) {
+        .col-especial{
+            margin-left:0rem;
+        }
+        
+    }
 </style>
 <footer class="container-fluid p-0 pt-4">
     <div class="container">
@@ -42,7 +51,7 @@ $arrModal = $modelC->obtenerModal();
                   <div class="col-lg-2"><i class="fab fa-facebook-f"></i></div>
               </div>-->
             </div>
-            <div class="col-lg-2 align-items-center pt-3" style="margin-left:2rem;">
+            <div class="col-especial col-lg-2 align-items-center pt-3">
                 <div>
                     <h4 style="color:var(--color6);font-weight:bold;">Our Services</h4>
                 </div>

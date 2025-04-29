@@ -24,34 +24,51 @@ $arrModal = $modelC->obtenerModal();
         display: block;
         font-size: .9rem !important;
     }
+
+    :root {
+        --gutter-x: 10px;
+        /* Valor por defecto (igual que Bootstrap) */
+    }
+
+    .col-especial{
+        margin-left:2rem;
+    }
+    @media screen and (max-width: 768px) {
+        .col-especial{
+            margin-left:0rem;
+        }
+        
+    }
 </style>
 <footer class="container-fluid p-0 pt-4">
     <div class="container">
         <div class="row d-flex justify-content-center ">
             <div class="col-lg-3 ">
-                <div><a href="#"><img src="<?php echo WEBURL ?>/assets/img/icons/escudo3.png" class="img-fluid" alt="" width="50%" style="filter: drop-shadow(0 0 5px rgb(246, 252, 251));"></a></div>
+                <div class="mx-3">
+                    <div><a href="#"><img src="<?php echo WEBURL ?>/assets/img/icons/escudo3.png" class="img-fluid" alt="" width="50%" style="filter: drop-shadow(0 0 5px rgb(246, 252, 251));"></a></div>
 
-                <div class="pt-3">
-                    <p style="color:var(--color6);text-align:start; font-weight:none;">Sapiens Consulting es una firma de consultoría líder con cuatro líneas de negocio: Ampliacion de Personal de TI, Desarrollo de Aplicaciones a Medida, Desarrollo de Aplicaciones Móviles, Gestión y Soporte de Aplicaciones, Ciberseguridad e Inteligencia Artificial.
-                    </p>
+                    <div class="pt-3">
+                        <p style="color:var(--color6);text-align:start; font-weight:none;">Sapiens Consulting es una firma de consultoría líder con cuatro líneas de negocio: Ampliacion de Personal de TI, Desarrollo de Aplicaciones a Medida, Desarrollo de Aplicaciones Móviles, Gestión y Soporte de Aplicaciones, Ciberseguridad e Inteligencia Artificial.
+                        </p>
+                    </div>
+                    <!--<div class="row d-flex ">
+  <div class="col-lg-5" style="font-size:1rem;">Follow Us</div>
+  <div class="col-lg-2"><i class="fab fa-facebook-f"></i></div>
+  <div class="col-lg-2"><i class="fab fa-facebook-f"></i></div>
+  <div class="col-lg-2"><i class="fab fa-facebook-f"></i></div>
+</div>-->
                 </div>
-                <!--<div class="row d-flex ">
-                  <div class="col-lg-5" style="font-size:1rem;">Follow Us</div>
-                  <div class="col-lg-2"><i class="fab fa-facebook-f"></i></div>
-                  <div class="col-lg-2"><i class="fab fa-facebook-f"></i></div>
-                  <div class="col-lg-2"><i class="fab fa-facebook-f"></i></div>
-              </div>-->
-                <br>
+
 
             </div>
 
-            <div class="col-lg align-items-center pt-3" style="margin-left: 2rem;">
+            <div class="col-especial col-md align-items-center pt-3" >
                 <div>
                     <h4 style="color:var(--color6);font-weight:bold;">Nuestros Servicios</h4>
                 </div>
                 <div class="pt-3">
                     <div>
-                        <p style="color:var(--color6);font-weight:none;" class="m-0">Inicio</p>
+                        <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/" style="color:var(--color6);">Inicio</a></p>
                     </div>
                     <div>
                         <p style="color:var(--color6);font-weight:none;" class="m-0"><a href="/#div-about" style="color:var(--color6);">Nosotros</a></p>
@@ -72,25 +89,27 @@ $arrModal = $modelC->obtenerModal();
             </div>
 
             <div class="col-lg-3 align-items-center pt-3">
-                <div>
-                    <h4 style="color:var(--color6);font-weight:bold;">Información Corporativa</h4>
-                </div>
-                <div class="pt-3">
+                <div style="margin-right: 2.3rem;">
                     <div>
-                        <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:sales@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank"> Consulta General: sales@sapiensconsultingperu.com</a></p>
+                        <h4 style="color:var(--color6);font-weight:bold;">Información Corporativa</h4>
                     </div>
-                    <div>
-                        <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:jobs@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank">Consulta de Carrera: jobs@sapiensconsultingperu.com</a></p>
-                    </div>
-                    <!-- <div><p style="color:var(--color6);font-weight:none;" class="m-0"> Peru Office: Calle Michigan 230, Rinconada del Lago, La Molina 15026, Lima – Perú.</p></div> -->
-                    <br>
-                    <div>
-                        <p style="color:var(--color6);text-align:justify; font-weight:none;" class="m-0"> <a href="/policy" style="text-decoration:underline;font-weight:bold;color:var(--color4);" target="_blank"> Políticas de Privacidad </a></p>
+                    <div class="pt-3">
+                        <div>
+                            <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:sales@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank"> Consulta General: <p>sales@sapiensconsultingperu.com</p></a></p>
+                        </div>
+                        <div>
+                            <p style="color:var(--color6); font-weight:none;" class="m-0"><a href="mailto:jobs@sapiensconsultingperu.com" style="color:var(--color6);" target="_blank">Consulta de Carrera: <p>jobs@sapiensconsultingperu.com</p></a></p>
+                        </div>
+                        <!-- <div><p style="color:var(--color6);font-weight:none;" class="m-0"> Peru Office: Calle Michigan 230, Rinconada del Lago, La Molina 15026, Lima – Perú.</p></div> -->
+                        <br>
+                        <div>
+                            <p style="color:var(--color6);text-align:justify; font-weight:none;" class="m-0"> <a href="/policy" style="text-decoration:underline;font-weight:bold;color:var(--color4);" target="_blank"> Políticas de Privacidad </a></p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 pt-3">
-                <div>
+                <div class="mx-4">
                     <h4 style="color:var(--color6);font-weight:bold;">Posts Populares</h4>
                     <br>
                     <?php

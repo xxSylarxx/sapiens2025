@@ -50,10 +50,8 @@
         } */
 
         .flotante {
-            position: absolute;
-            right: 0;
+            right: 1%;
             bottom: 60%;
-
         }
 
     }
@@ -61,7 +59,7 @@
 
 <div class="flotante">
     <a href="https://form.typeform.com/to/CHUVngFJ" target="_blank">
-        <div class="f1">CONTACTANOS</div>
+        <div class="f1">CONTÁCTANOS</div>
     </a>
     <a href="https://form.typeform.com/to/Rji8VTdp" target="_blank">
         <div class="f2">POSTULA</div>
