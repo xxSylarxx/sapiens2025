@@ -11,9 +11,8 @@ $arrModal = $modelC->obtenerModal();
 ?>
 <style>
     footer a {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        word-break: break-all;
+        word-break: keep-all;
+        overflow-wrap: normal;
     }
 
     footer p {
@@ -21,7 +20,7 @@ $arrModal = $modelC->obtenerModal();
     }
 
     footer .container span {
-        display: block;
+        /*  display: block; */
         font-size: .9rem !important;
     }
 
@@ -30,14 +29,59 @@ $arrModal = $modelC->obtenerModal();
         /* Valor por defecto (igual que Bootstrap) */
     }
 
-    .col-especial{
-        margin-left:2rem;
+    .col-especial {
+        margin-left: 2rem;
     }
+
+    .titulo-publicaciones {
+        margin-top: -5px;
+        color: var(--color6);
+        word-break: keep-all;
+        overflow-wrap: normal;
+        display: block;
+        /* text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden; */
+    }
+
+    .tooltip-footer {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background-color: #333333;
+        border-radius: 5px;
+        padding: 10px;
+        position: absolute;
+        top: -130%;
+        text-align: center;
+        display: none;
+
+    }
+
+
+
     @media screen and (max-width: 768px) {
-        .col-especial{
-            margin-left:0rem;
+        .col-especial {
+            margin-left: 0rem;
         }
-        
+
+    }
+
+    @media screen and (max-width: 1400px) {
+        .titulo-publicaciones {
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .content-pub:hover .tooltip-footer {
+            display: block;
+        }
     }
 </style>
 <footer class="container-fluid p-0 pt-4">
@@ -62,7 +106,7 @@ $arrModal = $modelC->obtenerModal();
 
             </div>
 
-            <div class="col-especial col-md align-items-center pt-3" >
+            <div class="col-especial col-md align-items-center pt-3">
                 <div>
                     <h4 style="color:var(--color6);font-weight:bold;">Nuestros Servicios</h4>
                 </div>
@@ -103,7 +147,7 @@ $arrModal = $modelC->obtenerModal();
                         <!-- <div><p style="color:var(--color6);font-weight:none;" class="m-0"> Peru Office: Calle Michigan 230, Rinconada del Lago, La Molina 15026, Lima – Perú.</p></div> -->
                         <br>
                         <div>
-                            <p style="color:var(--color6);text-align:justify; font-weight:none;" class="m-0"> <a href="/policy" style="text-decoration:underline;font-weight:bold;color:var(--color4);" target="_blank"> Políticas de Privacidad </a></p>
+                            <p style="color:var(--color6);text-align:justify; font-weight:none;word-break: keep-all;overflow-wrap: normal;" class="m-0"> <a href="/policy" style="text-decoration:underline;font-weight:bold;color:var(--color4);" target="_blank"> Políticas de Privacidad </a></p>
                         </div>
                     </div>
                 </div>
@@ -117,9 +161,15 @@ $arrModal = $modelC->obtenerModal();
                         for ($i = 0; $i <= 1; $i++) :
                             $value = $arrNoticias[$i]; ?>
                             <a href="/entrada/<?php echo $value['tagname'] ?>">
-                                <div class="row d-flex justify-content-around">
+                                <div class="row d-flex justify-content-around content-pub" style="position:relative;">
                                     <div class="col-lg-5"><img src="<?php echo $value['portada'] ?>" style="border-radius:5px;" class="img-fluid" alt=""></div>
-                                    <div class="col-lg-7 my-auto"><span style="color:var(--color6);"><?php echo $value['titulo'] ?></span></div>
+                                    <div class="col-lg-7"><span class="titulo-publicaciones"><?php echo $value['titulo'] ?></span>
+                                    </div>
+                                    <div class="tooltip-footer">
+                                        <span style="color:white;word-break:keep-all;overflow-wrap:normal;display:block; font-size: .8rem !important;">
+                                            <?php echo $value['titulo'] ?>
+                                        </span>
+                                    </div>
                                 </div>
                             </a>
                             <hr>

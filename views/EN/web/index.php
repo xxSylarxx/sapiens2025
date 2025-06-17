@@ -462,7 +462,7 @@ $arrModal = $modelC->obtenerModal();
 
         .title-pe {
             color: var(--color5);
-            font-size: 20px;
+            font-size: 1.2rem;
             font-weight: none;
         }
 
@@ -500,7 +500,7 @@ $arrModal = $modelC->obtenerModal();
             padding-top: 3rem;
             padding-bottom: 3rem;
             /*  background-color: var(--color1); */
-            background-size: 130%; 
+            background-size: 145%;
             background-repeat: no-repeat;
             text-align: center;
             padding-right: 5rem;
@@ -968,6 +968,15 @@ $arrModal = $modelC->obtenerModal();
         }
 
         @media only screen and (min-width:920px) and (max-width:1096px) {
+            .title-pe {
+                font-size: .9rem;
+            }
+
+            #careers {
+                background-size: 200%;
+                background-position: center center;
+            }
+
             #titulo-services {
                 font-weight: bold;
 
@@ -1038,6 +1047,14 @@ $arrModal = $modelC->obtenerModal();
 
 
         @media only screen and (min-width:1097px) and (max-width:1280px) {
+            .title-pe {
+                font-size: .9rem;
+            }
+
+            #careers {
+                background-size: 175%;
+            }
+
             /*  #section-ourservices {
                 margin-top: -50rem;
             } */
@@ -1627,8 +1644,10 @@ $arrModal = $modelC->obtenerModal();
                 justify-content: space-between;
                 position: absolute;
                 top: 30%;
-                width: 100%;
-                transform: translateY(-50%);
+                left: 50%;
+                width: 95%;
+                transform: translate(-50%, -50%);
+                /* transform: translateY(-50%); */
                 pointer-events: none;
                 /* Evita que bloqueen la interacción con las imágenes */
             }
@@ -1639,8 +1658,8 @@ $arrModal = $modelC->obtenerModal();
                 background: var(--color1) !important;
                 color: white !important;
                 border-radius: 10px !important;
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
                 display: flex;
                 align-items: center;
                 justify-content: center;

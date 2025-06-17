@@ -218,7 +218,7 @@ switch ($pagina) {
 </script>
 <script language="javascript">
     const cambiarIdioma = (lang) => {
-        fetch('<?php echo WEBURL ?>/lang.php?set=' + lang, {
+        fetch('/lang.php?set=' + lang, {
             method: 'GET'
         }).then(function(res) {
             return res.text()

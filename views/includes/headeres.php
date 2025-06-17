@@ -142,7 +142,7 @@ switch ($pagina) {
                 </li> -->
                 <li class="nav-item dropdown ">
                     <div id="cespanol">
-                        <a type="button" onclick="cambiarIdioma('EN')"><img src="<?php echo WEBURL ?>/assets/img/icons/en2.png" alt=""></a>
+                        <a type="button" onclick="cambiarIdioma('EN')"><img class="pb-2" src="<?php echo WEBURL ?>/assets/img/icons/en2.png" alt=""></a>
                     </div>
                 </li>
             </ul>
@@ -216,7 +216,7 @@ switch ($pagina) {
 </script>
 <script language="javascript">
     const cambiarIdioma = (lang) => {
-        fetch('<?php echo WEBURL ?>/lang.php?set=' + lang, {
+        fetch('/lang.php?set=' + lang, {
             method: 'GET'
         }).then(function(res) {
             return res.text()

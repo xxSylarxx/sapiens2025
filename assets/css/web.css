@@ -24,7 +24,7 @@
   font-family: "muli";
   src: url("../../assets/fonts/Muli-Regular.ttf");
 }
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -131,12 +131,10 @@ button > span {
 }
 
 #img-mundo2 {
-  
   -webkit-animation: alltuchtopdown 1.5s ease-in-out 0s infinite alternate;
   animation: alltuchtopdown 1.5s ease-in-out 0s infinite alternate;
   -webkit-animation-duration: 2.5s;
   animation-duration: 2.5s;
-
 }
 
 @keyframes alltuchtopdown {
@@ -231,17 +229,18 @@ footer .bar-inf2 {
 
 /* mod responsive */
 @media screen and (max-width: 600px) {
-  .modal-body img{
-    width:90px;
-    height:90px;
+  .modal-body img {
+    width: 90px;
+    height: 90px;
   }
   #img-mundo {
-    width:250px;
-  }#img-mundo2 {
-    width:290px;
+    width: 250px;
+  }
+  #img-mundo2 {
+    width: 290px;
   }
   #img-mundo3 {
-    width:290px;
+    width: 290px;
   }
   #escudo img {
     height: 50px;

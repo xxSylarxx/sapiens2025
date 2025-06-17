@@ -462,7 +462,7 @@ $arrModal = $modelC->obtenerModal();
 
         .title-pe {
             color: var(--color5);
-            font-size: 20px;
+            font-size: 1.2rem;
             font-weight: none;
         }
 
@@ -500,7 +500,7 @@ $arrModal = $modelC->obtenerModal();
             padding-top: 3rem;
             padding-bottom: 3rem;
             /*  background-color: var(--color1); */
-            background-size: 130%;
+            background-size: 135%;
             background-repeat: no-repeat;
             text-align: center;
             padding-right: 5rem;
@@ -965,6 +965,15 @@ $arrModal = $modelC->obtenerModal();
 
         /* @media only screen and (min-width:410px) and (max-width:1096px) { */
         @media only screen and (min-width:920px) and (max-width:1096px) {
+            .title-pe {
+                font-size: .9rem;
+            }
+
+            #careers {
+                background-size: 200%;
+                background-position: center center;
+            }
+
             #titulo-services {
                 font-weight: bold;
                 color: black;
@@ -1034,11 +1043,18 @@ $arrModal = $modelC->obtenerModal();
         }
 
         @media only screen and (min-width:1097px) and (max-width:1280px) {
+            .title-pe {
+                font-size: .9rem;
+            }
 
             /*  #section-ourservices {
                 margin-top: -50rem;
             }
- */
+            */
+            #careers {
+                background-size: 175%;
+            }
+
             #valores2 {
                 top: 8%;
                 left: 60px;
@@ -1643,8 +1659,10 @@ $arrModal = $modelC->obtenerModal();
                 justify-content: space-between;
                 position: absolute;
                 top: 30%;
-                width: 100%;
-                transform: translateY(-50%);
+                left: 50%;
+                width: 95%;
+                /* transform: translateY(-50%); */
+                transform: translate(-50%, -50%);
                 pointer-events: none;
                 /* Evita que bloqueen la interacción con las imágenes */
             }
@@ -1655,8 +1673,8 @@ $arrModal = $modelC->obtenerModal();
                 background: var(--color1) !important;
                 color: white !important;
                 border-radius: 10px !important;
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -1727,7 +1745,7 @@ $arrModal = $modelC->obtenerModal();
         <div class="container " style="text-align:center;">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <h2 style="color:var(--color7);font-weight:bold;">Programming & Technology Expertise</h2>
+                    <h2 style="color:var(--color7);font-weight:bold;">Experiencia en Programación y Tecnología</h2>
                     <div class="bar-main" style="width:100%;">
                         <div class="bar bar-big"></div>
                     </div>
@@ -1745,7 +1763,7 @@ $arrModal = $modelC->obtenerModal();
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush1">
                                         <button class="accordion-button collapsed shadow-lg " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog1.jpg');border: 2px solid var(--color4);border-radius:5px;background-size: 100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item1" aria-expanded="false" aria-controls="item1">
-                                            <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-laptop-code"></i>&nbsp;Standards</div>
+                                            <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-laptop-code"></i>&nbsp;Estándares</div>
                                             <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
                                         </button>
                                     </h2>
@@ -1883,7 +1901,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog2.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item2" aria-expanded="false" aria-controls="item2">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-code"></i>&nbsp;Languages</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-code"></i>&nbsp;Lenguajes</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -2285,7 +2303,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog3.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item3" aria-expanded="false" aria-controls="item3">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-cloud"></i>&nbsp;Cloud | CMS </div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-cloud"></i>&nbsp;Nube | CMS </div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -2462,7 +2480,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog4.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item4" aria-expanded="false" aria-controls="item4">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-database"></i>&nbsp;Databases</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-database"></i>&nbsp;Base de Datos</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -2595,7 +2613,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog5.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item5" aria-expanded="false" aria-controls="item5">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-sitemap"></i>&nbsp;System Integrations</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-sitemap"></i>&nbsp;Integraciones de Sistemas</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -2726,7 +2744,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog6.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item6" aria-expanded="false" aria-controls="item6">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-mobile-alt"></i>&nbsp;Mobile & Tablet</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-mobile-alt"></i>&nbsp;Móvil y Tablet</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -2872,7 +2890,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog7.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item7" aria-expanded="false" aria-controls="item7">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-microsoft"></i>&nbsp;Microsoft DevOps & Architecture</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fab fa-microsoft"></i>&nbsp;Microsoft DevOps & Arquitectura</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -3065,7 +3083,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog8.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item8" aria-expanded="false" aria-controls="item8">
 
-                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-file-alt"></i>&nbsp;Reporting & Charting</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);"><i class="fas fa-file-alt"></i>&nbsp;Reportes y Gráficos</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
@@ -3153,7 +3171,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog9.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item9" aria-expanded="false" aria-controls="item9">
                                         <div><img src="./assets/img/icons/libraries.png" alt="" style="width:25px; height:25px;"></div>
-                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;Libraries & Frameworks</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;Librerías y Frameworks</div>
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
 
                                     </button>
@@ -3363,7 +3381,7 @@ $arrModal = $modelC->obtenerModal();
 
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog11.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item11" aria-expanded="false" aria-controls="item11">
                                         <div><img src="./assets/img/icons/cyber.png" alt="" style="width:25px; height:25px;"></div>
-                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;Cybersecurity</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;Ciberseguridad</div>
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
                                     </button>
                                 </h2>
@@ -3506,7 +3524,7 @@ $arrModal = $modelC->obtenerModal();
                                 <h2 class="accordion-header" id="flush12">
                                     <button class="accordion-button collapsed shadow-lg  " style="background: linear-gradient(rgba(41, 55, 66, 0.1), rgba(41, 55, 66, 0.1)), url('./assets/img/inicio/blog12.jpg');border: 2px solid var(--color4);border-radius:5px;background-size:100%;" type="button" data-bs-toggle="collapse" data-bs-target="#item12" aria-expanded="false" aria-controls="item12">
                                         <div><img src="./assets/img/icons/ai.png" alt="" style="width:25px; height:25px;"></div>
-                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;AI</div>
+                                        <div class="w-100 title-pe" style="color:var(--color6);">&nbsp;IA</div>
 
                                         <div class="boton-icono"><i class="fas fa-chevron-down"></i></div>
                                     </button>
